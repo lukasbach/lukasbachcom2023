@@ -28,6 +28,11 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  }, {
+    resolve: `gatsby-source-medium`,
+    options: {
+      username: `@lukasbach`,
+    },
   }]
 };
 
