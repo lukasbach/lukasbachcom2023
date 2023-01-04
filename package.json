@@ -18,7 +18,12 @@
     "lint:test": "eslint ."
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@mantine/core": "^5.10.0",
+    "@mantine/hooks": "^5.10.0",
+    "@mantine/prism": "^5.10.0",
     "@mdx-js/react": "^2.2.1",
+    "dotenv": "^16.0.3",
     "gatsby": "^5.3.3",
     "gatsby-plugin-google-gtag": "^5.3.0",
     "gatsby-plugin-image": "^3.3.2",
@@ -29,6 +34,8 @@
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-source-medium": "^5.3.0",
     "gatsby-transformer-sharp": "^5.3.1",
+    "gatsby-transformer-yaml": "^5.3.0",
+    "octokit": "^2.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
