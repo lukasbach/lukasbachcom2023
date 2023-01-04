@@ -2,15 +2,17 @@ import type { GatsbyConfig } from "gatsby";
 import * as dotenv from "dotenv";
 
 dotenv.config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 const siteMetadata = {
   title: `Lukas Bach`,
   siteUrl: `https://www.yourdomain.tld`,
   githubUser: "lukasbach",
-  mediumUser: "@lukasbach",
+  mediumUser: "@notbrent", // TODO
 };
+
+// TODO fonts
 
 const config = {
   siteMetadata,
@@ -19,9 +21,17 @@ const config = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-google-gtag",
+    // "gatsby-plugin-google-gtag",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.svg$/,
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -47,6 +57,14 @@ const config = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/blog`,
+      },
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-medium`,
       options: {
