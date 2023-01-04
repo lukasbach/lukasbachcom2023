@@ -34,6 +34,9 @@ module.exports = {
         "no-restricted-syntax": "off",
         "no-continue": "off",
         "no-await-in-loop": "off",
-        "react/function-component-definition": "off"
+        "react/function-component-definition": "off",
+        "react/jsx-props-no-spreading": "off",
+        "no-nested-ternary": "off",
+        "react/require-default-props": "off"
     }
 };

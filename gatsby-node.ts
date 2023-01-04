@@ -20,37 +20,50 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
   });
 
   for await (const { data: repos } of iterator) {
-    const readmeArray = await Promise.all(
-      repos.map(({ owner, name }) =>
-        octokit.rest.repos
-          .getContent({
-            owner: owner.login,
-            repo: name,
-            path: "readme.md",
-          })
-          .then(({ data }) => decodeFile(data))
-          .catch(() => null)
-      )
-    );
-    console.log(readmeArray);
-    const homepageDataArray = await Promise.all(
-      repos.map(({ owner, name }) =>
-        octokit.rest.repos
-          .getContent({
-            owner: owner.name!,
-            repo: name,
-            path: "homepagedata.json",
-          })
-          .then(({ data }) => decodeFile(data))
-          .catch(() => null)
-      )
-    );
-    console.log(homepageDataArray);
+    // const readmeArray = await Promise.all(
+    //   repos.map(({ owner, name }) =>
+    //     octokit.rest.repos
+    //       .getContent({
+    //         owner: owner.login,
+    //         repo: name,
+    //         path: "readme.md",
+    //       })
+    //       .then(({ data }) => decodeFile(data))
+    //       .catch(() => null)
+    //   )
+    // );
+    // const homepageDataArray = await Promise.all(
+    //   repos.map(({ owner, name }) =>
+    //     octokit.rest.repos
+    //       .getContent({
+    //         owner: owner.name!,
+    //         repo: name,
+    //         path: "homepagedata.json",
+    //       })
+    //       .then(({ data }) => decodeFile(data))
+    //       .catch(() => null)
+    //   )
+    // );
 
     for (const [index, repo] of repos.entries()) {
-      const readme = readmeArray[index];
-      const homepageData = homepageDataArray[index];
-      console.log(repo.full_name, readme);
+      // const readme = readmeArray[index];
+      // const homepageData = homepageDataArray[index];
+      const readme = octokit.rest.repos
+        .getContent({
+          owner: repo.owner.login,
+          repo: repo.name,
+          path: "readme.md",
+        })
+        .then(({ data }) => decodeFile(data))
+        .catch(() => null);
+      const homepageData = octokit.rest.repos
+        .getContent({
+          owner: repo.owner.login,
+          repo: repo.name,
+          path: "homepagedata.json",
+        })
+        .then(({ data }) => decodeFile(data))
+        .catch(() => null);
       actions.createNode({
         ...repo,
         readme,
@@ -63,4 +76,5 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
       });
     }
   }
+  console.log("Finished loading data from github");
 };
