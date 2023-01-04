@@ -8,7 +8,7 @@ import { ContentGrid } from "../atoms/content-grid";
 export const HomeHeader: FC = () => {
   const theme = useMantineTheme();
   return (
-    <Box sx={{ display: "grid" }} mb={32}>
+    <Box sx={{ display: "grid" }}>
       <StaticImage
         src="../../images/pexels-dexter-fernandes-2646237.jpg"
         layout="fullWidth"

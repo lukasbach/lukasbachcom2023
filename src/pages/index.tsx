@@ -3,11 +3,13 @@ import type { HeadFC, PageProps } from "gatsby";
 import { LayoutProvider } from "../components/layouts/layout-provider";
 import { HomeHeader } from "../components/home/home-header";
 import { FeaturedProjects } from "../components/home/featured-projects";
+import { BlogPreview } from "../components/home/blog-preview";
 
 const IndexPage: React.FC<PageProps> = () => (
   <LayoutProvider>
     <HomeHeader />
     <FeaturedProjects />
+    <BlogPreview />
   </LayoutProvider>
 );
 

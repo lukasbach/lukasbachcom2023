@@ -2,7 +2,7 @@
 slug: "typescript-mapping-non-null-values"
 date: "2023-01-05"
 title: "TypeScript: Properly filtering arrays for non-null"
-category: typescript
+category: Typescript
 ---
 
 If you have used JavaScript and array operations for a while, there is a good chance you wanted to filter an array for non-null values. And if you are using TypeScript, there is a chance you ended up with something along the lines of that:

@@ -2,7 +2,7 @@
 slug: "typescript-interfaces-vs-types"
 date: "2023-01-04"
 title: "TypeScript: Interfaces vs. Types - What to use?"
-category: typescript
+category: Typescript
 ---
 
 In TypeScript, there are two easy ways to define type definitions to type runtime values with: Interfaces and Types. At first glance, interfaces seem more appropriate for typing objects and classes, while types only bring the benefit of supporting more complex structures like unions, but that is not the case. Let's explore the differences, and see which ones are more appropriate to use in which circumstances.

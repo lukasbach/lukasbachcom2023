@@ -1,19 +1,23 @@
 import React, { FC } from "react";
-import { Text, Card, Center, Grid, Title, Box, CSSObject, Group } from "@mantine/core";
+import { Text, Card, Center, Title, Box, CSSObject, Group } from "@mantine/core";
+import { Link } from "gatsby";
 import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";
 import YanaPictogram from "../../svg/yana-picto.svg";
 import RctPictogram from "../../svg/rct-picto.svg";
 import MatPictogram from "../../svg/mat-picto.svg";
 
-const ProjectCard: FC<{ category: string; title: string; text: string; pictogram: JSX.Element; svgCss: CSSObject }> = ({
-  category,
-  title,
-  text,
-  pictogram,
-  svgCss,
-}) => (
+const ProjectCard: FC<{
+  category: string;
+  title: string;
+  text: string;
+  pictogram: JSX.Element;
+  svgCss: CSSObject;
+  id: string;
+}> = ({ category, title, text, pictogram, svgCss, id }) => (
   <Card
+    component={Link}
+    to={`/projects/${id}`}
     sx={theme => ({
       backgroundColor: theme.white,
       color: theme.colors.gray[7],
@@ -23,6 +27,10 @@ const ProjectCard: FC<{ category: string; title: string; text: string; pictogram
       height: "210px",
       cursor: "pointer",
       transition: "transform .05s ease",
+      ":focus": {
+        outline: `2px solid ${theme.white}`,
+        outlineOffset: "3px",
+      },
       ":hover": {
         transform: "translateY(0) scale(1.02)",
       },
@@ -44,15 +52,16 @@ const ProjectCard: FC<{ category: string; title: string; text: string; pictogram
 );
 
 export const FeaturedProjects: FC = () => (
-  <>
+  <Box py={64}>
     <ContentGrid>
-      <Title order={2} mb={32}>
+      <Title order={2} mb={64}>
         Featured Projects
       </Title>
-      <Group spacing={32} mb={32}>
+      <Group spacing={32} mb={64}>
         <ProjectCard
           category="App"
           title="Yana"
+          id="yana"
           text="Powerful note-taking app with nested documents, full-text search, rich-text editor, code snippet editor and more"
           pictogram={<YanaPictogram />}
           svgCss={{
@@ -63,6 +72,7 @@ export const FeaturedProjects: FC = () => (
         <ProjectCard
           category="Library"
           title="React Complex Tree"
+          id="react-complex-tree"
           text="Unopinionated Accessible Tree Component with Multi-Select and Drag-And-Drop"
           pictogram={<RctPictogram />}
           svgCss={{
@@ -74,6 +84,7 @@ export const FeaturedProjects: FC = () => (
         <ProjectCard
           category="Library"
           title="Monaco Editor Auto Typings"
+          id="monaco-editor-auto-typings"
           text="Automatically load declaration files while typing in monaco editor instances"
           pictogram={<MatPictogram />}
           svgCss={{
@@ -85,7 +96,9 @@ export const FeaturedProjects: FC = () => (
       </Group>
     </ContentGrid>
     <Center>
-      <TransparentButton>See 123 more projects</TransparentButton>
+      <TransparentButton component={Link} to="/projects">
+        See 123 more projects
+      </TransparentButton>
     </Center>
-  </>
+  </Box>
 );

@@ -2,7 +2,7 @@
 slug: "typescript-the-many-types-of-nothing"
 date: "2023-01-05"
 title: "TypeScript: The many types of nothing"
-category: typescript
+category: Typescript
 ---
 
 Almost all programming languages have a special value that can be used to denote that a variable is uninitialized, not yet defined or was set in the context of a corner case. Perl calls it undef, Python calls it None, but most languages refer to it as null. If you've worked with JavaScript before, you know its apparent ambiguity of having two different kinds of this value: null and undefined. TypeScript doesn't necessarily help in clearing up confusion here by introducing three more special types related to type corner cases: never, void, and unknown. Let's explore those types to understand how they work and what they can be used for.
