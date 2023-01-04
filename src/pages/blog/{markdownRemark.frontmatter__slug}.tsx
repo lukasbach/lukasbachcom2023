@@ -1,5 +1,9 @@
 import * as React from "react";
-import { graphql, PageProps } from "gatsby";
+import { graphql, HeadFC, PageProps } from "gatsby";
+import { Title, TypographyStylesProvider } from "@mantine/core";
+import { PageLayout } from "../../components/layouts/page-layout";
+import { ContentGrid } from "../../components/atoms/content-grid";
+import { PageHead } from "../../components/atoms/page-head";
 
 const BlogPost = ({
   data, // this prop will be injected by the GraphQL query below.
@@ -9,17 +13,24 @@ const BlogPost = ({
     return <div>Not loaded..</div>;
   }
   return (
-    <div>
-      <div>
-        <h1>{markdownRemark.frontmatter.title}</h1>
+    <PageLayout>
+      <ContentGrid right={<></>}>
+        <Title order={1}>{markdownRemark.frontmatter.title}</Title>
         <h2>{markdownRemark.frontmatter.date}</h2>
-        <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-      </div>
-    </div>
+        <TypographyStylesProvider>
+          <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+        </TypographyStylesProvider>
+      </ContentGrid>
+    </PageLayout>
   );
 };
 
 export default BlogPost;
+// eslint-disable-next-line react/prop-types
+export const Head: HeadFC<Queries.Query> = ({ data }) => (
+  // eslint-disable-next-line react/prop-types
+  <PageHead title={data.markdownRemark?.frontmatter?.title ?? null} />
+);
 
 export const pageQuery = graphql`
   query ($id: String!) {
