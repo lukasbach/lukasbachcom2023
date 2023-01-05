@@ -1,11 +1,8 @@
 import React, { FC } from "react";
-import { Text, Card, Center, Grid, Title, Box, CSSObject, Group } from "@mantine/core";
+import { Text, Center, Grid, Title, Box } from "@mantine/core";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";
-import YanaPictogram from "../../svg/yana-picto.svg";
-import RctPictogram from "../../svg/rct-picto.svg";
-import MatPictogram from "../../svg/mat-picto.svg";
 
 const BlogEntry: FC<{
   category: string;
@@ -17,7 +14,7 @@ const BlogEntry: FC<{
 }> = ({ category, title, text, date, timeToRead, slug }) => (
   <Box
     component={Link}
-    to={`/blog/${slug}`}
+    to={slug}
     sx={theme => ({
       display: "block",
       fontSize: "14px",
@@ -57,7 +54,11 @@ const BlogEntry: FC<{
 const useBlogEntries = () =>
   useStaticQuery<Queries.BlogPreviewQuery>(graphql`
     query BlogPreview {
-      allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 3) {
+      allMarkdownRemark(
+        sort: { frontmatter: { date: DESC } }
+        limit: 3
+        filter: { frontmatter: { kind: { eq: "blog" } } }
+      ) {
         nodes {
           timeToRead
           frontmatter {

@@ -1,5 +1,6 @@
 ---
 slug: "blog/typescript-interfaces-vs-types"
+kind: blog
 date: "2023-01-04"
 title: "TypeScript: Interfaces vs. Types - What to use?"
 category: Typescript

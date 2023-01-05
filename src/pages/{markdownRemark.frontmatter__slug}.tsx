@@ -4,13 +4,17 @@ import { Title, TypographyStylesProvider } from "@mantine/core";
 import { PageLayout } from "../components/layouts/page-layout";
 import { ContentGrid } from "../components/atoms/content-grid";
 import { PageHead } from "../components/atoms/page-head";
+import { ProjectPage } from "../components/project/project-page";
 
 const BlogPost = ({
   data, // this prop will be injected by the GraphQL query below.
-}: PageProps<Queries.Query>) => {
+}: PageProps<Queries.MarkdownRemarkQueryQuery>) => {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   if (!markdownRemark?.frontmatter || !markdownRemark?.html) {
     return <div>Not loaded..</div>;
+  }
+  if (markdownRemark.frontmatter.kind === "project" && markdownRemark.frontmatter.repo) {
+    return <ProjectPage repo={markdownRemark.frontmatter.repo} />;
   }
   return (
     <PageLayout>
@@ -33,7 +37,7 @@ export const Head: HeadFC<Queries.Query> = ({ data }) => (
 );
 
 export const pageQuery = graphql`
-  query MarkdownRemarkQuery($id: String!) {
+  query MarkdownRemarkPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -41,6 +45,8 @@ export const pageQuery = graphql`
         slug
         title
         category
+        kind
+        repo
       }
     }
   }

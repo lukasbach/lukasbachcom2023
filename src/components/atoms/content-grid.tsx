@@ -2,12 +2,9 @@ import React, { FC, PropsWithChildren } from "react";
 import { Grid } from "@mantine/core";
 import { GridProps } from "@mantine/core/lib/Grid/Grid";
 
-export const ContentGrid: FC<PropsWithChildren<{ left?: JSX.Element; right?: JSX.Element } & GridProps>> = ({
-  children,
-  left,
-  right,
-  ...props
-}) => (
+export const ContentGrid: FC<
+  PropsWithChildren<{ left?: JSX.Element; right?: JSX.Element } & Omit<GridProps, "left" | "right">>
+> = ({ children, left, right, ...props }) => (
   <Grid gutter={0} {...props}>
     {left && (
       <Grid.Col lg={2} offsetLg={2}>

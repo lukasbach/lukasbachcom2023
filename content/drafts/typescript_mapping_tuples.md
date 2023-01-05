@@ -1,3 +1,7 @@
+---
+kind: draft
+---
+
 ```ts
 interface MyInterface {
     a: string

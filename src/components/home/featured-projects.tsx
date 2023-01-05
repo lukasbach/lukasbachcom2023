@@ -17,7 +17,7 @@ const ProjectCard: FC<{
 }> = ({ category, title, text, pictogram, svgCss, id }) => (
   <Card
     component={Link}
-    to={`/projects/${id}`}
+    to={`/project/${id}`}
     sx={theme => ({
       backgroundColor: theme.white,
       color: theme.colors.gray[7],
