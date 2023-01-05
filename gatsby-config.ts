@@ -61,7 +61,7 @@ const config = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/blog`,
+        path: `${__dirname}/content`,
       },
     },
     `gatsby-transformer-remark`,

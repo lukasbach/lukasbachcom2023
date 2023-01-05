@@ -1,5 +1,6 @@
 import { Octokit } from "octokit";
 import { GatsbyNode } from "gatsby";
+import { writeFile } from "fs";
 import { components } from "@octokit/openapi-types";
 import config from "./gatsby-config";
 
@@ -20,35 +21,8 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
   });
 
   for await (const { data: repos } of iterator) {
-    // const readmeArray = await Promise.all(
-    //   repos.map(({ owner, name }) =>
-    //     octokit.rest.repos
-    //       .getContent({
-    //         owner: owner.login,
-    //         repo: name,
-    //         path: "readme.md",
-    //       })
-    //       .then(({ data }) => decodeFile(data))
-    //       .catch(() => null)
-    //   )
-    // );
-    // const homepageDataArray = await Promise.all(
-    //   repos.map(({ owner, name }) =>
-    //     octokit.rest.repos
-    //       .getContent({
-    //         owner: owner.name!,
-    //         repo: name,
-    //         path: "homepagedata.json",
-    //       })
-    //       .then(({ data }) => decodeFile(data))
-    //       .catch(() => null)
-    //   )
-    // );
-
-    for (const [index, repo] of repos.entries()) {
-      // const readme = readmeArray[index];
-      // const homepageData = homepageDataArray[index];
-      const readme = octokit.rest.repos
+    for (const repo of repos) {
+      const readme = await octokit.rest.repos
         .getContent({
           owner: repo.owner.login,
           repo: repo.name,
@@ -56,7 +30,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         })
         .then(({ data }) => decodeFile(data))
         .catch(() => null);
-      const homepageData = octokit.rest.repos
+      const homepageData = await octokit.rest.repos
         .getContent({
           owner: repo.owner.login,
           repo: repo.name,
@@ -73,6 +47,23 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
           type: "repo",
           contentDigest: createContentDigest(repo),
         },
+      });
+
+      const frontmatter = Object.entries({
+        slug: `/project/${repo.name}`,
+        title: repo.name,
+        date: repo.created_at,
+        repo: repo.full_name,
+      }).reduce((acc, [key, value]) => `${acc}\n${key}: "${value}"`, "");
+
+      await new Promise<void>((res, rej) => {
+        writeFile(`${__dirname}/content/projects/${repo.name}.md`, `---\n${frontmatter}\n---\n\n${readme}`, err => {
+          if (err) {
+            rej(err);
+          } else {
+            res();
+          }
+        });
       });
     }
   }

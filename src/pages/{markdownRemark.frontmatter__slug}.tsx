@@ -1,9 +1,9 @@
 import * as React from "react";
 import { graphql, HeadFC, PageProps } from "gatsby";
 import { Title, TypographyStylesProvider } from "@mantine/core";
-import { PageLayout } from "../../components/layouts/page-layout";
-import { ContentGrid } from "../../components/atoms/content-grid";
-import { PageHead } from "../../components/atoms/page-head";
+import { PageLayout } from "../components/layouts/page-layout";
+import { ContentGrid } from "../components/atoms/content-grid";
+import { PageHead } from "../components/atoms/page-head";
 
 const BlogPost = ({
   data, // this prop will be injected by the GraphQL query below.
@@ -33,7 +33,7 @@ export const Head: HeadFC<Queries.Query> = ({ data }) => (
 );
 
 export const pageQuery = graphql`
-  query ($id: String!) {
+  query MarkdownRemarkQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

@@ -1,5 +1,5 @@
 ---
-slug: "typescript-the-many-types-of-nothing"
+slug: "blog/typescript-the-many-types-of-nothing"
 date: "2023-01-05"
 title: "TypeScript: The many types of nothing"
 category: Typescript
