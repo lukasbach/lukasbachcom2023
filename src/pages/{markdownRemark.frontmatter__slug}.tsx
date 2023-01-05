@@ -8,13 +8,13 @@ import { ProjectPage } from "../components/project/project-page";
 
 const BlogPost = ({
   data, // this prop will be injected by the GraphQL query below.
-}: PageProps<Queries.MarkdownRemarkQueryQuery>) => {
+}: PageProps<Queries.MarkdownRemarkPageQuery>) => {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   if (!markdownRemark?.frontmatter || !markdownRemark?.html) {
     return <div>Not loaded..</div>;
   }
   if (markdownRemark.frontmatter.kind === "project" && markdownRemark.frontmatter.repo) {
-    return <ProjectPage repo={markdownRemark.frontmatter.repo} />;
+    return <ProjectPage repo={markdownRemark.frontmatter.repo} markdownRemark={markdownRemark} />;
   }
   return (
     <PageLayout>

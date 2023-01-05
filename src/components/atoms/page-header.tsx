@@ -41,6 +41,7 @@ export const PageHeader: FC = () => (
             sx={{
               borderBottom: `4px solid transparent`,
               lineHeight: "1.2em",
+              fontSize: "30px",
             }}
           >
             Lukas Bach

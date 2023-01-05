@@ -67,6 +67,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
       const latestRelease = latestReleaseArray[index];
 
       const homepageData = {
+        title: repo.name,
         homepage: repo.homepage,
         description: repo.description,
         ...projectData.find((project: any) => project.repo === repo.name),
@@ -75,6 +76,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
 
       actions.createNode({
         ...repo,
+        title: homepageData.title,
         latestRelease,
         readme,
         homepageData,
@@ -87,7 +89,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
 
       const frontmatter = Object.entries({
         slug: `/project/${repo.name}`,
-        title: repo.name,
+        title: homepageData.title,
         date: repo.created_at,
         repo: repo.full_name,
         kind: "project",
@@ -98,6 +100,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         .replace(/[^\n]*sonarcloud\.io\/api\/project_badges[^\n]*\n/g, "")
         .replace(/[^\n]*producthunt\.com[^\n]*\n/g, "")
         .replace(/[^\n]*badgen\.net[^\n]*\n/g, "")
+        .replace(/[^\n]*badge\.svg[^\n]*\n/g, "") // github workflow badges
         .replace(/\n> [^\n]*/g, "")
         .replace(/\n# [^\n]*/g, "")
         .replace(/^# [^\n]*/g, "");

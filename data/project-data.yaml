@@ -1,12 +1,17 @@
 -
   repo: react-complex-tree
+  title: React Complex Tree
   npm: react-complex-tree
   category: library
   tags: typescript, react, component, dnd
 -
   repo: yana
+  title: Yana
   category: app
   tags: notebook
 -
   repo: monaco-editor-auto-typings
+  title: Monaco Editor Auto Typings
   category: library
+  demo: https://lukasbach.github.io/monaco-editor-auto-typings/
+  docs: https://lukasbach.github.io/monaco-editor-auto-typings/docs/
