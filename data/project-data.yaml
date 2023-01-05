@@ -3,15 +3,235 @@
   title: React Complex Tree
   npm: react-complex-tree
   category: library
-  tags: typescript, react, component, dnd
+  producthunt: react-complex-tree
+  highlight: true
 -
   repo: yana
   title: Yana
   category: app
-  tags: notebook
+  sonarcloud: lukasbach_yana
+  producthunt: yana-3
+  highlight: true
 -
   repo: monaco-editor-auto-typings
   title: Monaco Editor Auto Typings
   category: library
+  npm: monaco-editor-auto-typings
   demo: https://lukasbach.github.io/monaco-editor-auto-typings/
   docs: https://lukasbach.github.io/monaco-editor-auto-typings/docs/
+  highlight: true
+-
+  repo: hexagonopolis
+  title: Hexagonopolis
+  category: game
+  sonarcloud: lukasbach_hexagonopolis
+  highlight: true
+-
+  repo: synergies
+  title: Synergies
+  category: library
+  npm: synergies, synergies-logging-middleware, synergies-storybook-middleware
+  npminstall: synergies immer
+  docs: https://synergies.js.org/docs/getstarted
+  highlight: true
+-
+  repo: npmdocs
+  title: npmdocs
+  category: app
+  highlight: true
+-
+  repo: vileo
+  title: Vileo
+  category: app
+  sonarcloud: lukasbach_vileo
+-
+  repo: slyder
+  title: Slyder
+  category: game
+-
+  repo: devsession
+  title: DevSession
+  category: app
+  sonarcloud: lukasbach_devsession
+  highlight: true
+-
+  repo: swquote
+  title: SWQuote
+  category: app
+  deprecation: SWQuote was hosted on Heroku in a free pod, but was taken offline by Heroku in the meantime.
+-
+  repo: intellij-ts-react-livetemplates
+  title: IntelliJ TS React Live Templates
+  category: plugin
+  highlight: true
+-
+  repo: chakra-ui-contextmenu
+  title: Chakra UI Contextmenu
+  category: library
+  npm: chakra-ui-contextmenu
+  demo: https://lukasbach.github.io/chakra-ui-contextmenu/
+  highlight: true
+-
+  repo: ts-starter
+  title: ts-starter
+  category: template
+-
+  repo: github-takeout
+  title: Github Takeout
+  category: cli
+  npm: github-takeout
+-
+  repo: ts-regex
+  title: ts-regex
+  category: fun
+-
+  repo: monomon
+  title: Monomon
+  category: app
+  highlight: true
+-
+  repo: gfont-cloudless
+  title: gfont-cloudless
+  category: library
+-
+  repo: npm-lib-template
+  title: NPM Library Template
+  category: template
+-
+  repo: react-accessible-menu
+  title: React Accessible Menu
+  category: library
+  docs: http://lukasbach.github.io/react-accessible-menu/
+  demo: http://lukasbach.github.io/react-accessible-menu/storybook
+  npm: react-accessible-menu
+-
+  repo: ink-form
+  title: Ink Form
+  category: library
+  npm: ink-form
+  highlight: true
+-
+  repo: pauspapier
+  title: Pauspapier
+  category: app
+  highlight: true
+-
+  repo: allias
+  title: Allias
+  category: cli
+  npm: allias
+-
+  repo: github-bulk-unsubscriber
+  title: Github Bulk Unsubscriber
+  category: cli
+  npm: github-bulk-unsubscriber
+-
+  repo: osuexport
+  title: Osu Export
+  category: cli
+-
+  repo: noindent
+  title: noindent
+  category: library
+  npm: noindent
+-
+  repo: table-log
+  title: Table Log
+  category: library
+  npm: table-log
+-
+  repo: react-boxx
+  title: react-boxx
+  category: library
+  npm: react-boxx
+-
+  repo: mockingbirb
+  title: Mockingbirb
+  category: app
+  highlight: true
+-
+  repo: retypetron
+  title: ReTypeTron
+  category: template
+-
+  repo: table-log
+  title: Table Log
+  category: library
+  npm: table-log
+-
+  repo: json-extract-path
+  title: Json Extract Path
+  category: cli
+  cliexample: npx json-extract-path --file ./example.json --jsonpath "$.store.book[*].author"
+  npm: json-extract-path
+-
+  repo: ayemitter
+  title: Ayemitter
+  category: library
+  npm: ayemitter
+-
+  repo: typed-react-package-starter
+  title: Typed React Package Starter
+  category: template
+-
+  repo: movie-color-strip
+  title: Movie Color Strip
+  category: cli
+  npm: movie-color-strip
+-
+  repo: cli-ts-commander-starter
+  title: CLI TS Commander Starter
+  category: template
+-
+  repo: orion
+  title: Orion
+  category: game
+  highlight: true
+-
+  repo: toolbelt
+  title: Toolbelt
+  category: app
+-
+  repo: pixeldrawer
+  title: Pixeldrawer
+  category: app
+-
+  repo: examstats
+  title: Examstats
+  category: app
+-
+  repo: filenode
+  title: Filenode
+  category: app
+-
+  repo: oloProcessing
+  title: Olo Processing
+  category: game
+-
+  repo: uncomplex
+  title: Uncomplex
+  category: library
+  npm: uncomplex
+-
+  repo: textannotation
+  title: Text Annotation
+  category: plugin
+  sonarcloud: lukasbach_textannotation
+-
+  repo: piek
+  title: Piek
+  category: cli
+  npm: piek
+  cliexample: npx piek yourfile.txt
+-
+  repo: pdfjoin
+  title: PDFJoin
+  category: cli
+  npm: pdfjoin
+  highlight: true
+-
+  repo: ires
+  title: IRES
+  category: cli
+  npm: ires
+  cliexample: npx ires -i input.png --sizes 16 32 64
