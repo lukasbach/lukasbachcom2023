@@ -54,7 +54,7 @@ export const PageHeader: FC = () => (
           <TransparentButton component={Link} to="/blog">
             Blog
           </TransparentButton>
-          <TransparentButton component={Link} to="https://github.com/lukasbach" target="_blank">
+          <TransparentButton component="a" href="https://github.com/lukasbach" target="_blank">
             GitHub
           </TransparentButton>
         </Group>

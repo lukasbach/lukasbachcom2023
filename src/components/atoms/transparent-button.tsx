@@ -1,9 +1,10 @@
 import { Button, ButtonProps } from "@mantine/core";
 import React from "react";
 
-export function TransparentButton<T = "button">(
-  props: import("@mantine/utils").PolymorphicComponentProps<T, ButtonProps>
-) {
+export function TransparentButton<T = "button">({
+  active,
+  ...props
+}: import("@mantine/utils").PolymorphicComponentProps<T, ButtonProps> & { active?: boolean }) {
   return (
     <Button
       styles={{
@@ -15,6 +16,12 @@ export function TransparentButton<T = "button">(
             backgroundColor: "white",
             color: "black",
           },
+          ...(active
+            ? {
+                backgroundColor: "white",
+                color: "black",
+              }
+            : null),
         },
         icon: { "> svg": { width: 20, height: 20 } },
       }}
