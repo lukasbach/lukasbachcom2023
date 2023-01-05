@@ -1,11 +1,20 @@
 import React, { FC } from "react";
 import { Text, Card, Center, Title, Box, CSSObject, Group } from "@mantine/core";
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";
 import YanaPictogram from "../../svg/yana-picto.svg";
 import RctPictogram from "../../svg/rct-picto.svg";
 import MatPictogram from "../../svg/mat-picto.svg";
+
+const useRepoCount = () =>
+  useStaticQuery<Queries.RepoCountQuery>(graphql`
+    query RepoCount {
+      allRepo {
+        totalCount
+      }
+    }
+  `).allRepo.totalCount;
 
 const ProjectCard: FC<{
   category: string;
@@ -17,7 +26,7 @@ const ProjectCard: FC<{
 }> = ({ category, title, text, pictogram, svgCss, id }) => (
   <Card
     component={Link}
-    to={`/project/${id}`}
+    to={`/projects/${id}`}
     sx={theme => ({
       backgroundColor: theme.white,
       color: theme.colors.gray[7],
@@ -51,54 +60,57 @@ const ProjectCard: FC<{
   </Card>
 );
 
-export const FeaturedProjects: FC = () => (
-  <Box py={64}>
-    <ContentGrid>
-      <Title order={2} mb={64}>
-        Featured Projects
-      </Title>
-      <Group spacing={32} mb={64}>
-        <ProjectCard
-          category="App"
-          title="Yana"
-          id="yana"
-          text="Powerful note-taking app with nested documents, full-text search, rich-text editor, code snippet editor and more"
-          pictogram={<YanaPictogram />}
-          svgCss={{
-            top: "10px",
-            right: "-10px",
-          }}
-        />
-        <ProjectCard
-          category="Library"
-          title="React Complex Tree"
-          id="react-complex-tree"
-          text="Unopinionated Accessible Tree Component with Multi-Select and Drag-And-Drop"
-          pictogram={<RctPictogram />}
-          svgCss={{
-            top: "10px",
-            right: "-50px",
-            height: "100px",
-          }}
-        />
-        <ProjectCard
-          category="Library"
-          title="Monaco Editor Auto Typings"
-          id="monaco-editor-auto-typings"
-          text="Automatically load declaration files while typing in monaco editor instances"
-          pictogram={<MatPictogram />}
-          svgCss={{
-            top: "10px",
-            right: "-20px",
-            height: "100px",
-          }}
-        />
-      </Group>
-    </ContentGrid>
-    <Center>
-      <TransparentButton component={Link} to="/projects">
-        See 123 more projects
-      </TransparentButton>
-    </Center>
-  </Box>
-);
+export const FeaturedProjects: FC = () => {
+  const repoCount = useRepoCount();
+  return (
+    <Box py={64}>
+      <ContentGrid>
+        <Title order={2} mb={64}>
+          Featured Projects
+        </Title>
+        <Group spacing={32} mb={64}>
+          <ProjectCard
+            category="App"
+            title="Yana"
+            id="yana"
+            text="Powerful note-taking app with nested documents, full-text search, rich-text editor, code snippet editor and more"
+            pictogram={<YanaPictogram />}
+            svgCss={{
+              top: "10px",
+              right: "-10px",
+            }}
+          />
+          <ProjectCard
+            category="Library"
+            title="React Complex Tree"
+            id="react-complex-tree"
+            text="Unopinionated Accessible Tree Component with Multi-Select and Drag-And-Drop"
+            pictogram={<RctPictogram />}
+            svgCss={{
+              top: "10px",
+              right: "-50px",
+              height: "100px",
+            }}
+          />
+          <ProjectCard
+            category="Library"
+            title="Monaco Editor Auto Typings"
+            id="monaco-editor-auto-typings"
+            text="Automatically load declaration files while typing in monaco editor instances"
+            pictogram={<MatPictogram />}
+            svgCss={{
+              top: "10px",
+              right: "-20px",
+              height: "100px",
+            }}
+          />
+        </Group>
+      </ContentGrid>
+      <Center>
+        <TransparentButton component={Link} to="/projects">
+          See {repoCount - 3} more projects
+        </TransparentButton>
+      </Center>
+    </Box>
+  );
+};

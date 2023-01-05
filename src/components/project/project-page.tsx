@@ -20,7 +20,6 @@ const useProjectData = (repo: string) =>
             repo
             npm
             category
-            tags
           }
           latestRelease {
             data {
@@ -99,7 +98,7 @@ export const ProjectPage: FC<{ repo: string; markdownRemark: Queries.MarkdownRem
         <TypographyStylesProvider
           sx={theme => ({
             textAlign: "justify",
-            " img": { borderRadius: theme.radius.lg },
+            " img": { borderRadius: theme.radius.lg, marginBottom: "16px" },
             " [data-homepagehide]": { display: "none" },
           })}
         >

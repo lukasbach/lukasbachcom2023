@@ -66,12 +66,19 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
       const readme = readmeArray[index];
       const latestRelease = latestReleaseArray[index];
 
+      const homepageDataFile = homepageDataArray[index];
+      const homepageDataFromYaml = projectData.find((project: any) => project.repo === repo.name);
+
+      if (!homepageDataFile && !homepageDataFromYaml) {
+        continue;
+      }
+
       const homepageData = {
         title: repo.name,
         homepage: repo.homepage,
         description: repo.description,
-        ...projectData.find((project: any) => project.repo === repo.name),
-        ...homepageDataArray[index],
+        ...homepageDataFile,
+        ...homepageDataFromYaml,
       };
 
       actions.createNode({
@@ -88,7 +95,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
       });
 
       const frontmatter = Object.entries({
-        slug: `/project/${repo.name}`,
+        slug: `/projects/${repo.name}`,
         title: homepageData.title,
         date: repo.created_at,
         repo: repo.full_name,
@@ -103,7 +110,8 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         .replace(/[^\n]*badge\.svg[^\n]*\n/g, "") // github workflow badges
         .replace(/\n> [^\n]*/g, "")
         .replace(/\n# [^\n]*/g, "")
-        .replace(/^# [^\n]*/g, "");
+        .replace(/^# [^\n]*/g, "")
+        .replace(/\]\(\.\/([^)]+)\)/g, `](https://github.com/${repo.full_name}/raw/${repo.default_branch}/$1)`);
 
       writeFileSync(`${__dirname}/content/projects/${repo.name}.md`, `---${frontmatter}\n---\n\n${cleanedReadme}`);
     }

@@ -48,9 +48,15 @@ export const PageHeader: FC = () => (
           </Title>
         </Box>
         <Group>
-          <TransparentButton>Projects</TransparentButton>
-          <TransparentButton>Blog</TransparentButton>
-          <TransparentButton>GitHub</TransparentButton>
+          <TransparentButton component={Link} to="/projects">
+            Projects
+          </TransparentButton>
+          <TransparentButton component={Link} to="/blog">
+            Blog
+          </TransparentButton>
+          <TransparentButton component={Link} to="https://github.com/lukasbach" target="_blank">
+            GitHub
+          </TransparentButton>
         </Group>
       </Flex>
     </ContentGrid>
