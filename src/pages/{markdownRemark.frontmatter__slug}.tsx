@@ -61,6 +61,7 @@ export const pageQuery = graphql`
         category
         kind
         repo
+        download
       }
     }
   }

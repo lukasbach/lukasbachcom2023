@@ -8,7 +8,7 @@ export const LayoutProvider: FC<PropsWithChildren<{}>> = ({ children }) => (
     theme={{
       colorScheme: "dark",
       defaultRadius: "lg",
-      primaryColor: "violet",
+      primaryColor: "indigo",
       fontSizes: {
         xs: 12,
         sm: 14,
