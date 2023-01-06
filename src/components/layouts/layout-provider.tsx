@@ -55,6 +55,15 @@ export const LayoutProvider: FC<PropsWithChildren<{}>> = ({ children }) => (
           styles: {},
         },
       },
+      focusRingStyles: {
+        styles: theme => ({
+          outline: `2px solid ${theme.white}`,
+          outlineOffset: "3px",
+        }),
+        inputStyles: theme => ({
+          outline: `1px solid ${theme.white}`,
+        }),
+      },
     }}
   >
     {children}

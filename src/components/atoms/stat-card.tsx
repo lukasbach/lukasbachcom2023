@@ -7,22 +7,24 @@ export const StatCard: FC<
   children ? (
     <Box
       component={href ? "a" : "div"}
-      href={href}
+      href={href!}
       target="_blank"
-      sx={theme => ({
-        display: "block",
-        textDecoration: "none",
-        cursor: "pointer",
-        color: "unset",
-        borderRadius: theme.radius.lg,
-        border: "1px solid transparent",
-        ":hover": { backgroundColor: theme.colors.dark[6], borderColor: theme.colors.dark[4] },
-        ":focus": href
-          ? {
-              outline: `2px solid ${theme.white}`,
-            }
-          : null,
-      })}
+      sx={theme =>
+        ({
+          display: "block",
+          textDecoration: "none",
+          cursor: "pointer",
+          color: "unset",
+          borderRadius: theme.radius.lg,
+          border: "1px solid transparent",
+          ":hover": { backgroundColor: theme.colors.dark[6], borderColor: theme.colors.dark[4] },
+          ":focus": href
+            ? {
+                outline: `2px solid ${theme.white}`,
+              }
+            : null,
+        } as any)
+      }
       py={8}
       px={16}
       ml={-18}
