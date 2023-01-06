@@ -5,11 +5,74 @@ dotenv.config({
   path: `.env`,
 });
 
-const siteMetadata = {
+const me = {
   title: `Lukas Bach`,
-  siteUrl: `https://www.yourdomain.tld`,
+  shortDescription: "Software engineer at GoTo",
+  siteUrl: `https://lukasbach.com`,
   githubUser: "lukasbach",
-  mediumUser: "@notbrent", // TODO
+  mediumUser: "@lukasbach",
+  linkedinUser: "lukasbach",
+  twitterUser: "lukmbach",
+};
+
+const links = {
+  github: `https://github.com/${me.githubUser}`,
+  linkedin: `https://www.linkedin.com/in/${me.linkedinUser}`,
+  twitter: `https://twitter.com/${me.twitterUser}`,
+  medium: `https://medium.com/${me.mediumUser}`,
+};
+
+const siteMetadata = {
+  ...me,
+  links,
+  footer: {
+    title: me.title,
+    description: me.shortDescription,
+    lists: [
+      {
+        text: "Featured Projects",
+        links: [
+          {
+            text: "React Complex Tree",
+            href: `/projects/react-complex-tree`,
+          },
+          {
+            text: "Monaco Auto Typings",
+            href: `/projects/monaco-editor-auto-typings`,
+          },
+          {
+            text: "Yana",
+            href: `/projects/yana`,
+          },
+        ],
+      },
+      {
+        text: "Follow me",
+        links: [
+          {
+            text: "GitHub",
+            href: links.github,
+            isExternal: true,
+          },
+          {
+            text: "LinkedIn",
+            href: links.linkedin,
+            isExternal: true,
+          },
+          {
+            text: "Medium",
+            href: links.medium,
+            isExternal: true,
+          },
+          {
+            text: "Twitter",
+            href: links.twitter,
+            isExternal: true,
+          },
+        ],
+      },
+    ],
+  },
 };
 
 // TODO fonts

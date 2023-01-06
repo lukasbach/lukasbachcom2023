@@ -32,6 +32,9 @@ export function DetailedListItem<T = "a">({
             ":focus > *": {
               outline: `2px solid ${theme.white}`,
             },
+            ":focus": {
+              outline: "none",
+            },
           } as any
         }
       >

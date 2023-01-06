@@ -53,7 +53,9 @@ export const BlogPreview: FC = () => {
         ))}
       </ContentGrid>
       <Center mt={64}>
-        <TransparentButton>More Blog Articles</TransparentButton>
+        <TransparentButton component={Link} to="/blog">
+          More Blog Articles
+        </TransparentButton>
       </Center>
     </Box>
   );

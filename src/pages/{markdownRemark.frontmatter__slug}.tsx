@@ -13,14 +13,28 @@ const BlogPost = ({
   if (!markdownRemark?.frontmatter || !markdownRemark?.html) {
     return <div>Not loaded..</div>;
   }
+
   if (markdownRemark.frontmatter.kind === "project" && markdownRemark.frontmatter.repo) {
     return <ProjectPage repo={markdownRemark.frontmatter.repo} markdownRemark={markdownRemark} />;
   }
+
+  if (markdownRemark.frontmatter.kind === "page") {
+    return (
+      <PageLayout>
+        <ContentGrid>
+          <Title order={1}>{markdownRemark.frontmatter.title}</Title>
+          <TypographyStylesProvider>
+            <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+          </TypographyStylesProvider>
+        </ContentGrid>
+      </PageLayout>
+    );
+  }
+
   return (
     <PageLayout>
       <ContentGrid right={<></>}>
         <Title order={1}>{markdownRemark.frontmatter.title}</Title>
-        <h2>{markdownRemark.frontmatter.date}</h2>
         <TypographyStylesProvider>
           <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
         </TypographyStylesProvider>
