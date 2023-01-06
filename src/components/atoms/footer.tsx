@@ -12,6 +12,10 @@ const useFooterData = () =>
         polyfill
         buildTime(formatString: "MMMM DD, YYYY")
         siteMetadata {
+          mail
+          links {
+            mailto
+          }
           footer {
             description
             title
@@ -32,7 +36,13 @@ export const Footer: FC = () => {
   const theme = useMantineTheme();
   const footer = useFooterData();
   return (
-    <Box component="footer" bg={theme.colors.dark[6]} py={48} mt={128}>
+    <Box
+      component="footer"
+      bg={theme.colors.dark[6]}
+      py={48}
+      mt={128}
+      sx={{ borderTop: `1px solid ${theme.colors.dark[5]}` }}
+    >
       <ContentGrid>
         <Flex sx={{ alignItems: "flex-start" }}>
           <Group sx={{ flexGrow: 1 }}>
@@ -86,8 +96,8 @@ export const Footer: FC = () => {
         <Flex>
           <Text sx={{ flexGrow: 1, color: theme.colors.gray[5] }} size="sm">
             © 2023 Lukas Bach. Contact me at{" "}
-            <Anchor href="mailto:contact@lukasbach.com" sx={{ color: theme.colors.gray[3] }}>
-              contact@lukasbach.com
+            <Anchor href={footer?.siteMetadata?.links?.mailto ?? "#"} sx={{ color: theme.colors.gray[3] }}>
+              {footer?.siteMetadata?.mail}
             </Anchor>
           </Text>
           <Group>

@@ -8,51 +8,53 @@ import { StatCard } from "../atoms/stat-card";
 
 const isNotNullish = <T,>(value: T | null | undefined): value is T => value !== undefined && value !== null;
 
-const useProjectData = (repo: string) =>
-  useStaticQuery<Queries.ProjectDataQuery>(graphql`
-    query ProjectData {
-      allRepo {
-        nodes {
-          name
-          full_name
-          title
-          owner {
-            login
-          }
-          homepageData {
-            repo
-            npm
-            category
-          }
-          latestRelease {
-            data {
-              url
-              html_url
+const useProjectData = (repo?: string) =>
+  repo
+    ? useStaticQuery<Queries.ProjectDataQuery>(graphql`
+        query ProjectData {
+          allRepo {
+            nodes {
               name
-              created_at
-              published_at
-              assets {
-                name
-                url
+              full_name
+              title
+              owner {
+                login
               }
+              homepageData {
+                repo
+                npm
+                category
+              }
+              latestRelease {
+                data {
+                  url
+                  html_url
+                  name
+                  created_at
+                  published_at
+                  assets {
+                    name
+                    url
+                  }
+                }
+              }
+              stargazers_count
+              watchers_count
+              open_issues_count
+              created_at
+              license {
+                name
+                key
+              }
+              homepage
+              description
             }
           }
-          stargazers_count
-          watchers_count
-          open_issues_count
-          created_at
-          license {
-            name
-            key
-          }
-          homepage
-          description
         }
-      }
-    }
-  `).allRepo.nodes.find(r => r.full_name === repo);
+      `).allRepo.nodes.find(r => r.full_name === repo)
+    : null;
 
-export const ProjectPage: FC<{ repo: string; markdownRemark: Queries.MarkdownRemarkPageQuery["markdownRemark"] }> = ({
+export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRemarkPageQuery["markdownRemark"] }> = ({
   repo,
   markdownRemark,
 }) => {

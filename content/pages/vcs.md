@@ -3,11 +3,12 @@ slug: "/edu/vcs"
 category: "edu"
 date: "2014-01-01"
 title: "Code Versioning with Git"
-description: "A presentation with seminar paper about code versioning with git, written in a school project"
+description: "A presentation with seminar paper about code versioning with git, written in a school project."
 tags: German, Git, Paper, Cheatsheet, Presentation
 icon: "fas/graduation-cap"
 repo: lukasbach/edu-recaps
-kind: project
+kind: resource
+template: advanced
 download:
 - "https://github.com/lukasbach/edu-recaps/raw/master/git-vcs-ausarbeitung.pdf;Komplette Ausarbeitung als PDF"
 - "https://github.com/lukasbach/edu-recaps/raw/master/git-vcs-presentation.pdf;Kurzform der Präsentation als PDF"

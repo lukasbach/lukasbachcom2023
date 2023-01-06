@@ -1,11 +1,12 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import { Title } from "@mantine/core";
+import { Text, Title } from "@mantine/core";
 import { graphql, useStaticQuery } from "gatsby";
 import { PageHead } from "../components/atoms/page-head";
 import { ContentGrid } from "../components/atoms/content-grid";
 import { PageLayout } from "../components/layouts/page-layout";
 import { BigListItem } from "../components/atoms/big-list-item";
+import { CategoryText } from "../components/atoms/category-text";
 
 const useBlogEntries = () =>
   useStaticQuery<Queries.AllBlogEntriesQuery>(graphql`
@@ -35,12 +36,20 @@ const Page: React.FC<PageProps> = () => {
         {blogEntries.allMarkdownRemark.nodes.map(article => (
           <BigListItem
             key={article.frontmatter?.slug ?? ""}
-            category={article.frontmatter?.category ?? ""}
             title={article.frontmatter?.title ?? ""}
             text={article.excerpt ?? ""}
-            timeToRead={article.timeToRead ?? 5}
-            date={article.frontmatter?.date ?? ""}
-            slug={article.frontmatter?.slug ?? ""}
+            left={
+              <Text>
+                <CategoryText>{article.frontmatter?.category}</CategoryText>
+              </Text>
+            }
+            right={
+              <>
+                <Text>{article.frontmatter?.date}</Text>
+                <Text>{article.timeToRead ?? 5} minutes</Text>
+              </>
+            }
+            to={article.frontmatter?.slug ?? ""}
           />
         ))}
       </ContentGrid>

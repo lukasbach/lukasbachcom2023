@@ -14,11 +14,11 @@ const BlogPost = ({
     return <div>Not loaded..</div>;
   }
 
-  if (markdownRemark.frontmatter.kind === "project" && markdownRemark.frontmatter.repo) {
-    return <ProjectPage repo={markdownRemark.frontmatter.repo} markdownRemark={markdownRemark} />;
+  if (markdownRemark.frontmatter.template === "advanced") {
+    return <ProjectPage repo={markdownRemark.frontmatter.repo ?? undefined} markdownRemark={markdownRemark} />;
   }
 
-  if (markdownRemark.frontmatter.kind === "page") {
+  if (markdownRemark.frontmatter.template === "page") {
     return (
       <PageLayout>
         <ContentGrid>
@@ -31,16 +31,7 @@ const BlogPost = ({
     );
   }
 
-  return (
-    <PageLayout>
-      <ContentGrid right={<></>}>
-        <Title order={1}>{markdownRemark.frontmatter.title}</Title>
-        <TypographyStylesProvider>
-          <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-        </TypographyStylesProvider>
-      </ContentGrid>
-    </PageLayout>
-  );
+  return null;
 };
 
 export default BlogPost;
@@ -62,6 +53,7 @@ export const pageQuery = graphql`
         kind
         repo
         download
+        template
       }
     }
   }

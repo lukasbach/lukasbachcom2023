@@ -4,6 +4,7 @@ date: "2022-08-10"
 title: "Privacy and Cookie Policy"
 icon: fas/info-circle
 kind: page
+template: advanced
 ---
 
 Last updated August 10, 2022

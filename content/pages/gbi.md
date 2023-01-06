@@ -2,12 +2,13 @@
 slug: "/edu/gbi"
 category: "edu"
 date: "2017-02-01"
-title: "Grundbegriffe der Informatik - Tutoriumsfolien (WS 16/17)"
-description: "Tutorial slides for the lecture \"Basic Notions of Computer Science\""
+title: "Basic Notions of Computer Science - Tutorial Slides"
+description: "Slides for the lecture \"Basic Notions of Computer Science\" for which I held a tutorial during my third semester."
 tags: GBI, KIT, Slides
 icon: "fas/graduation-cap"
 repo: lukasbach/gbitutbeamer
-kind: project
+kind: resource
+template: advanced
 download:
 - "https://github.com/lukasbach/gbitutbeamer/raw/master/slides/printslide_slide-tut01.pdf;Foliensatz 1: Mengen, Alphabete, Relationen, Abbildungen"
 - "https://github.com/lukasbach/gbitutbeamer/raw/master/slides/printslide_slide-tut02.pdf;Foliensatz 2: Wörter, Formale Sprachen"

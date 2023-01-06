@@ -1,6 +1,7 @@
 ---
-slug: "blog/typescript-mapping-non-null-values"
+slug: "/blog/typescript-mapping-non-null-values"
 kind: blog
+template: page
 date: "2023-01-05"
 title: "TypeScript: Properly filtering arrays for non-null"
 category: Typescript

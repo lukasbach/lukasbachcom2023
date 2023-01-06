@@ -13,6 +13,7 @@ const me = {
   mediumUser: "@lukasbach",
   linkedinUser: "lukasbach",
   twitterUser: "lukmbach",
+  mail: "contact@lukasbach.com",
 };
 
 const links = {
@@ -20,6 +21,7 @@ const links = {
   linkedin: `https://www.linkedin.com/in/${me.linkedinUser}`,
   twitter: `https://twitter.com/${me.twitterUser}`,
   medium: `https://medium.com/${me.mediumUser}`,
+  mailto: `mailto:${me.mail}`,
 };
 
 const siteMetadata = {

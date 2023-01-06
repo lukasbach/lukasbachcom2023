@@ -2,12 +2,13 @@
 slug: "/edu/recaps"
 category: "edu"
 date: "2019-07-07"
-title: "Course recaps"
-description: "Recaps for various courses at Karlsruhe Institut of Technology"
+title: "University Course Recaps"
+description: "Recaps for various courses at Karlsruhe Institut of Technology for the computer science degree. Partially in english and german."
 tags: KIT, Recap, PDF, Notes
 icon: "fas/graduation-cap"
 repo: lukasbach/edu-recaps
-kind: project
+kind: resource
+template: advanced
 download:
 - "https://github.com/lukasbach/edu-recaps/raw/master/bigdataanalysis-algorithms.pdf;Big Data Analytics - Algorithms (Analyse großer Datenbestände)"
 - "https://github.com/lukasbach/edu-recaps/raw/master/bigdataanalysis-recap.pdf;Big Data Analytics - Recap"

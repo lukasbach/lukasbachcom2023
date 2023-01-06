@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import { HeaderBg } from "./header-bg";
 import { ContentGrid } from "./content-grid";
 import { TransparentButton } from "./transparent-button";
+import { HeaderLinks } from "./header-links";
 
 export const PageHeader: FC = () => (
   <HeaderBg maxHeight={200} bgOpacity={0.4} gradientStart={0.25}>
@@ -47,17 +48,7 @@ export const PageHeader: FC = () => (
             Lukas Bach
           </Title>
         </Box>
-        <Group>
-          <TransparentButton component={Link} to="/projects">
-            Projects
-          </TransparentButton>
-          <TransparentButton component={Link} to="/blog">
-            Blog
-          </TransparentButton>
-          <TransparentButton component="a" href="https://github.com/lukasbach" target="_blank">
-            GitHub
-          </TransparentButton>
-        </Group>
+        <HeaderLinks />
       </Flex>
     </ContentGrid>
   </HeaderBg>

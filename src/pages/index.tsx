@@ -5,12 +5,16 @@ import { HomeHeader } from "../components/home/home-header";
 import { FeaturedProjects } from "../components/home/featured-projects";
 import { BlogPreview } from "../components/home/blog-preview";
 import { PageHead } from "../components/atoms/page-head";
+import { Resources } from "../components/home/resources";
+import { Footer } from "../components/atoms/footer";
 
 const IndexPage: React.FC<PageProps> = () => (
   <LayoutProvider>
     <HomeHeader />
     <FeaturedProjects />
     <BlogPreview />
+    <Resources />
+    <Footer />
   </LayoutProvider>
 );
 

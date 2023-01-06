@@ -4,6 +4,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";
 import { BigListItem } from "../atoms/big-list-item";
+import { CategoryText } from "../atoms/category-text";
 
 const useBlogEntries = () =>
   useStaticQuery<Queries.BlogPreviewQuery>(graphql`
@@ -43,12 +44,20 @@ export const BlogPreview: FC = () => {
         {blogEntries.allMarkdownRemark.nodes.map(article => (
           <BigListItem
             key={article.frontmatter?.slug ?? ""}
-            category={article.frontmatter?.category ?? ""}
             title={article.frontmatter?.title ?? ""}
             text={article.excerpt ?? ""}
-            timeToRead={article.timeToRead ?? 5}
-            date={article.frontmatter?.date ?? ""}
-            slug={article.frontmatter?.slug ?? ""}
+            left={
+              <Text>
+                <CategoryText>{article.frontmatter?.category}</CategoryText>
+              </Text>
+            }
+            right={
+              <>
+                <Text>{article.frontmatter?.date}</Text>
+                <Text>{article.timeToRead ?? 5} minutes</Text>
+              </>
+            }
+            to={article.frontmatter?.slug ?? ""}
           />
         ))}
       </ContentGrid>

@@ -100,6 +100,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         date: repo.created_at,
         repo: repo.full_name,
         kind: "project",
+        template: "advanced",
       }).reduce((acc, [key, value]) => `${acc}\n${key}: "${value}"`, "");
 
       const cleanedReadme = (readme ?? "")

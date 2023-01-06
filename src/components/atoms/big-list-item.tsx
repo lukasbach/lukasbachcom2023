@@ -3,16 +3,15 @@ import { Box, Grid, Text, Title } from "@mantine/core";
 import { Link } from "gatsby";
 
 export const BigListItem: FC<{
-  category: string;
   title: string;
   text: string;
-  date: string;
-  timeToRead: number;
-  slug: string;
-}> = ({ category, title, text, date, timeToRead, slug }) => (
+  right: JSX.Element;
+  left: JSX.Element;
+  to: string;
+}> = ({ title, text, left, right, to }) => (
   <Box
     component={Link}
-    to={slug}
+    to={to}
     sx={theme => ({
       display: "block",
       fontSize: "14px",
@@ -32,9 +31,7 @@ export const BigListItem: FC<{
     py={32}
   >
     <Grid>
-      <Grid.Col lg={2}>
-        <Text>{category}</Text>
-      </Grid.Col>
+      <Grid.Col lg={2}>{left}</Grid.Col>
       <Grid.Col lg={8}>
         <Title order={4} size={24} color="white" mt={-8} mb={8}>
           {title}
@@ -42,8 +39,7 @@ export const BigListItem: FC<{
         <Text>{text}</Text>
       </Grid.Col>
       <Grid.Col lg={2} sx={{ textAlign: "right" }}>
-        <Text>{date}</Text>
-        <Text>{timeToRead} minutes</Text>
+        {right}
       </Grid.Col>
     </Grid>
   </Box>

@@ -4,6 +4,7 @@ date: "2020-07-05"
 title: "Impressum"
 icon: fas/info-circle
 kind: page
+template: advanced
 ---
 
 ## Angaben gemäß § 5 TMG
