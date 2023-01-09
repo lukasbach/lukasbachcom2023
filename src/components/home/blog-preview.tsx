@@ -37,7 +37,7 @@ export const BlogPreview: FC = () => {
         backgroundColor: theme.colors.dark[8],
       })}
     >
-      <ContentGrid>
+      <ContentGrid wide>
         <Title order={2} mb={64}>
           Recent Blog Posts
         </Title>

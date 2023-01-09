@@ -64,7 +64,7 @@ export const FeaturedProjects: FC = () => {
   const repoCount = useRepoCount();
   return (
     <Box py={64}>
-      <ContentGrid>
+      <ContentGrid wide>
         <Title order={2} mb={64}>
           Featured Projects
         </Title>

@@ -31,14 +31,14 @@ export const BigListItem: FC<{
     py={32}
   >
     <Grid>
-      <Grid.Col lg={2}>{left}</Grid.Col>
-      <Grid.Col lg={8}>
+      <Grid.Col md={2}>{left}</Grid.Col>
+      <Grid.Col md={8}>
         <Title order={4} size={24} color="white" mt={-8} mb={8}>
           {title}
         </Title>
         <Text>{text}</Text>
       </Grid.Col>
-      <Grid.Col lg={2} sx={{ textAlign: "right" }}>
+      <Grid.Col md={2} sx={{ textAlign: "right" }}>
         {right}
       </Grid.Col>
     </Grid>

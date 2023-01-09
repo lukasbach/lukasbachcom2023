@@ -6,7 +6,7 @@ import { PageLayout } from "../layouts/page-layout";
 import { ContentGrid } from "../atoms/content-grid";
 import { StatCard } from "../atoms/stat-card";
 import { CliInput } from "../atoms/cli-input";
-import { isNotNullish } from "../../util";
+import { isNotNullish, useContainerSize } from "../../util";
 
 const useProjectData = (repo?: string) =>
   useStaticQuery<Queries.ProjectDataQuery>(graphql`
@@ -63,6 +63,8 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
   repo,
   markdownRemark,
 }) => {
+  const size = useContainerSize();
+  const small = ["xs", "sm"].includes(size);
   const repoData = useProjectData(repo);
 
   if (!markdownRemark?.frontmatter) {
@@ -74,7 +76,7 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
   return (
     <PageLayout>
       <ContentGrid>
-        <Flex sx={{ alignItems: "center" }}>
+        <Flex sx={{ alignItems: small ? "flex-start" : "center", flexDirection: small ? "column" : "row" }}>
           <Box sx={{ flexGrow: 1, fontWeight: 300 }}>
             <Text color="white" sx={{ textTransform: "capitalize" }}>
               {repoData?.homepageData?.category ?? markdownRemark.frontmatter.category}
@@ -86,7 +88,12 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
               {new Date(repoData?.created_at ?? markdownRemark.frontmatter.date ?? "").toDateString()}
             </Text>
           </Box>
-          <Text size="md" align="right" sx={{ maxWidth: "350px", fontWeight: 300 }} ml={32}>
+          <Text
+            size="md"
+            align={small ? "left" : "right"}
+            sx={{ maxWidth: "350px", fontWeight: 300 }}
+            ml={small ? 0 : 32}
+          >
             {repoData?.description ?? ""}
           </Text>
         </Flex>

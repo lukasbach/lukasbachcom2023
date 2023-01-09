@@ -2,6 +2,8 @@ import { Box, BoxProps, Flex, Grid, Text, useMantineTheme } from "@mantine/core"
 import { HiStar } from "react-icons/all";
 import * as React from "react";
 
+// TODO responsiveness
+
 export function DetailedListItem<T = "a">({
   listCategory,
   title,
@@ -39,7 +41,7 @@ export function DetailedListItem<T = "a">({
         }
       >
         <Grid gutter="sm" mb={8}>
-          <Grid.Col lg={2}>
+          <Grid.Col md={2}>
             <Flex>
               <Text color={theme.white}>{listCategory}</Text>
               {highlighted && (
@@ -49,13 +51,13 @@ export function DetailedListItem<T = "a">({
               )}
             </Flex>
           </Grid.Col>
-          <Grid.Col lg={3}>
+          <Grid.Col md={3}>
             <Text color={theme.white}>{title}</Text>
           </Grid.Col>
-          <Grid.Col lg={5}>
+          <Grid.Col md={5}>
             <Text color={theme.colors.dark[1]}>{description}</Text>
           </Grid.Col>
-          <Grid.Col lg={2} sx={{ textAlign: "right" }}>
+          <Grid.Col md={2} sx={{ textAlign: "right" }}>
             <Text color={theme.colors.dark[3]} sx={{ textTransform: "capitalize" }}>
               {meta}
             </Text>

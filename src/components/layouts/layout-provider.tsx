@@ -54,6 +54,17 @@ export const LayoutProvider: FC<PropsWithChildren<{}>> = ({ children }) => (
         grid: {
           styles: {},
         },
+        Container: {
+          defaultProps: {
+            sizes: {
+              xs: 950,
+              sm: 950,
+              md: 950,
+              lg: 1100,
+              xl: 1100,
+            },
+          },
+        },
       },
       focusRingStyles: {
         styles: theme => ({

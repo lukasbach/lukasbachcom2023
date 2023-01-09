@@ -3,6 +3,7 @@ import { Box, Text, Flex, useMantineTheme, Title, Group, Avatar, Anchor, Stack, 
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { ContentGrid } from "./content-grid";
+import { useContainerSize } from "../../util";
 
 const useFooterData = () =>
   useStaticQuery<Queries.FooterDataQuery>(graphql`
@@ -32,9 +33,12 @@ const useFooterData = () =>
       }
     }
   `).site;
-export const Footer: FC = () => {
+export const Footer: FC<{ wide?: boolean }> = ({ wide }) => {
   const theme = useMantineTheme();
   const footer = useFooterData();
+  const size = useContainerSize();
+  const rowCount = ["xs"].includes(size) ? 0 : ["sm"].includes(size) ? 1 : 2;
+  const lists = footer?.siteMetadata?.footer?.lists?.filter((list, i) => i < rowCount) ?? [];
   return (
     <Box
       component="footer"
@@ -43,7 +47,7 @@ export const Footer: FC = () => {
       mt={128}
       sx={{ borderTop: `1px solid ${theme.colors.dark[5]}` }}
     >
-      <ContentGrid>
+      <ContentGrid wide={wide}>
         <Flex sx={{ alignItems: "flex-start" }}>
           <Group sx={{ flexGrow: 1 }}>
             <StaticImage
@@ -59,7 +63,7 @@ export const Footer: FC = () => {
             </div>
           </Group>
           <Group sx={{ alignItems: "flex-start", textAlign: "right" }} spacing={64}>
-            {footer?.siteMetadata?.footer?.lists?.map((list, index) => (
+            {lists.map((list, index) => (
               // eslint-disable-next-line react/no-array-index-key
               <Box key={index}>
                 <Title size="lg" order={4} ff="'Exo 2', sans-serif" color={theme.white}>

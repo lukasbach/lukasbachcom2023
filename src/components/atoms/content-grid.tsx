@@ -1,20 +1,38 @@
 import React, { FC, PropsWithChildren } from "react";
-import { Grid } from "@mantine/core";
+import { Container, Grid } from "@mantine/core";
 import { GridProps } from "@mantine/core/lib/Grid/Grid";
+import { useContainerSize } from "../../util";
 
 // TODO use Container component
 export const ContentGrid: FC<
-  PropsWithChildren<{ left?: JSX.Element; right?: JSX.Element } & Omit<GridProps, "left" | "right">>
-> = ({ children, left, right, ...props }) => (
-  <Grid gutter={0} {...props}>
-    {left && (
-      <Grid.Col lg={2} offsetLg={2}>
-        {left}
-      </Grid.Col>
-    )}
-    <Grid.Col lg={left && right ? 4 : left || right ? 6 : 8} offsetLg={left ? 0 : 2}>
-      {children}
-    </Grid.Col>
-    {right && <Grid.Col lg={2}>{right}</Grid.Col>}
-  </Grid>
-);
+  PropsWithChildren<{ right?: JSX.Element; wide?: boolean } & Omit<GridProps, "left" | "right">>
+> = ({ children, right, wide, ...props }) => {
+  const size = useContainerSize();
+  return (
+    <Container
+      size={size}
+      sizes={
+        wide
+          ? {
+              xs: 900,
+              sm: 900,
+              md: 900,
+              lg: 900,
+              xl: 1300,
+            }
+          : undefined
+      }
+    >
+      <Grid gutter={16} {...props}>
+        <Grid.Col lg={right ? 9 : 12} sm={right ? 8 : 12}>
+          {children}
+        </Grid.Col>
+        {right && (
+          <Grid.Col lg={3} sm={4}>
+            {right}
+          </Grid.Col>
+        )}
+      </Grid>
+    </Container>
+  );
+};

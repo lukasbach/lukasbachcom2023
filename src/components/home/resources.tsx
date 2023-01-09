@@ -33,7 +33,7 @@ export const Resources: FC = () => {
       //   backgroundColor: theme.colors.dark[7],
       // })}
     >
-      <ContentGrid>
+      <ContentGrid wide>
         <Title order={2} mb={64}>
           Resources
         </Title>

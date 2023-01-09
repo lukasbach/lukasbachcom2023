@@ -14,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => (
     <FeaturedProjects />
     <BlogPreview />
     <Resources />
-    <Footer />
+    <Footer wide />
   </LayoutProvider>
 );
 

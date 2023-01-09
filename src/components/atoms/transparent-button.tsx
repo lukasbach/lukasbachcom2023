@@ -1,10 +1,10 @@
 import { Button, ButtonProps } from "@mantine/core";
-import React from "react";
+import React, { ForwardedRef, forwardRef } from "react";
 
-export function TransparentButton<T = "button">({
-  active,
-  ...props
-}: import("@mantine/utils").PolymorphicComponentProps<T, ButtonProps> & { active?: boolean }) {
+function TransparentButtonInner<T = "button">(
+  { active, ...props }: import("@mantine/utils").PolymorphicComponentProps<T, ButtonProps> & { active?: boolean },
+  ref: ForwardedRef<T>
+) {
   return (
     <Button
       styles={{
@@ -26,6 +26,9 @@ export function TransparentButton<T = "button">({
         icon: { "> svg": { width: 20, height: 20 } },
       }}
       {...(props as any)}
+      ref={ref}
     />
   );
 }
+
+export const TransparentButton = forwardRef(TransparentButtonInner<any>) as typeof TransparentButtonInner;

@@ -1,18 +1,43 @@
 import React, { FC } from "react";
-import { Group } from "@mantine/core";
+import { ActionIcon, Group, Menu } from "@mantine/core";
 import { Link } from "gatsby";
+import { HiChevronDown, HiOutlineBars3 } from "react-icons/all";
 import { TransparentButton } from "./transparent-button";
+import { useContainerSize } from "../../util";
 
-export const HeaderLinks: FC = () => (
-  <Group>
-    <TransparentButton component={Link} to="/projects">
-      Projects
-    </TransparentButton>
-    <TransparentButton component={Link} to="/blog">
-      Blog
-    </TransparentButton>
-    <TransparentButton component="a" href="https://github.com/lukasbach" target="_blank">
-      GitHub
-    </TransparentButton>
-  </Group>
-);
+export const HeaderLinks: FC = () => {
+  const size = useContainerSize();
+  const small = ["xs", "sm"].includes(size);
+  return small ? (
+    <Menu position="bottom-end">
+      <Menu.Target>
+        <TransparentButton>
+          <HiOutlineBars3 />
+        </TransparentButton>
+      </Menu.Target>
+      <Menu.Dropdown>
+        <Menu.Item component={Link} to="/projects">
+          Projects
+        </Menu.Item>
+        <Menu.Item component={Link} to="/blog">
+          Blog
+        </Menu.Item>
+        <Menu.Item component="a" href="https://github.com/lukasbach" target="_blank">
+          GitHub
+        </Menu.Item>
+      </Menu.Dropdown>
+    </Menu>
+  ) : (
+    <Group sx={{ justifyContent: "flex-end" }}>
+      <TransparentButton component={Link} to="/projects">
+        Projects
+      </TransparentButton>
+      <TransparentButton component={Link} to="/blog">
+        Blog
+      </TransparentButton>
+      <TransparentButton component="a" href="https://github.com/lukasbach" target="_blank">
+        GitHub
+      </TransparentButton>
+    </Group>
+  );
+};
