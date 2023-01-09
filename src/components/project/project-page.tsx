@@ -1,58 +1,63 @@
 import React, { FC } from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { Box, Divider, Flex, Group, Text, Title, TypographyStylesProvider, useMantineTheme } from "@mantine/core";
+import { Box, Divider, Flex, Group, Text, Title, TypographyStylesProvider } from "@mantine/core";
 import { HiOutlineArrowDownTray } from "react-icons/hi2";
 import { PageLayout } from "../layouts/page-layout";
 import { ContentGrid } from "../atoms/content-grid";
 import { StatCard } from "../atoms/stat-card";
-
-const isNotNullish = <T,>(value: T | null | undefined): value is T => value !== undefined && value !== null;
+import { CliInput } from "../atoms/cli-input";
+import { isNotNullish } from "../../util";
 
 const useProjectData = (repo?: string) =>
-  repo
-    ? useStaticQuery<Queries.ProjectDataQuery>(graphql`
-        query ProjectData {
-          allRepo {
-            nodes {
+  useStaticQuery<Queries.ProjectDataQuery>(graphql`
+    query ProjectData {
+      allRepo {
+        nodes {
+          name
+          full_name
+          title
+          owner {
+            login
+          }
+          homepageData {
+            repo
+            npm
+            category
+            highlight
+            deprecation
+            cliexample
+            producthunt
+            demo
+            docs
+            npminstall
+          }
+          latestRelease {
+            data {
+              url
+              html_url
               name
-              full_name
-              title
-              owner {
-                login
-              }
-              homepageData {
-                repo
-                npm
-                category
-              }
-              latestRelease {
-                data {
-                  url
-                  html_url
-                  name
-                  created_at
-                  published_at
-                  assets {
-                    name
-                    url
-                  }
-                }
-              }
-              stargazers_count
-              watchers_count
-              open_issues_count
               created_at
-              license {
+              published_at
+              assets {
                 name
-                key
+                url
               }
-              homepage
-              description
             }
           }
+          stargazers_count
+          watchers_count
+          open_issues_count
+          created_at
+          license {
+            name
+            key
+          }
+          homepage
+          description
         }
-      `).allRepo.nodes.find(r => r.full_name === repo)
-    : null;
+      }
+    }
+  `).allRepo.nodes.find(r => r.full_name === repo);
 
 export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRemarkPageQuery["markdownRemark"] }> = ({
   repo,
@@ -109,12 +114,15 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
       </ContentGrid>
       <ContentGrid
         right={
-          <dl>
-            <Text component="dt">Homepage</Text>
-            <Box component="dd" m={0}>
-              <Link to="#">asd</Link>
-            </Box>
-          </dl>
+          <>
+            <CliInput {...repoData?.homepageData} />
+            <dl>
+              <Text component="dt">Homepage</Text>
+              <Box component="dd" m={0}>
+                <Link to="#">asd</Link>
+              </Box>
+            </dl>
+          </>
         }
       >
         <TypographyStylesProvider
