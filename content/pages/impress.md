@@ -11,9 +11,11 @@ template: advanced
 
 Lukas Bach
 
-Kaiserstraße 186
+St. Johännser Ring 40
 
-76133 Karlsruhe
+71665 Vaihingen/Enz
+
+Germany
 
 ## Kontakt
 E-Mail: contact@lukasbach.com
