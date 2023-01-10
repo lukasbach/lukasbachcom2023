@@ -59,10 +59,12 @@ export const ProjectSidebar: FC<{ repo?: Queries.ProjectDataQuery["allRepo"]["no
         <Box mb={32}>
           <Title order={4}>Websites</Title>
           {websites.map(({ name, icon, href }) => (
-            <Tooltip label={href} position="left-start">
-              <StatCard key={href} title={href} icon={icon} href={href} filled>
-                {name}
-              </StatCard>
+            <Tooltip label={href} position="left" offset={32} openDelay={500}>
+              <div>
+                <StatCard key={href} title={href} icon={icon} href={href} filled>
+                  {name}
+                </StatCard>
+              </div>
             </Tooltip>
           ))}
         </Box>
@@ -82,16 +84,18 @@ export const ProjectSidebar: FC<{ repo?: Queries.ProjectDataQuery["allRepo"]["no
             ?.filter(isNotNullish)
             .filter(({ name }) => !ignoredAssetEndings.find(ending => name?.endsWith(ending)))
             .map(({ name, browser_download_url, size }) => (
-              <Tooltip label={name} position="left-start">
-                <StatCard
-                  key={browser_download_url}
-                  title={`${Math.floor(size / (1024 * 1024))}mb`}
-                  icon={<HiArrowDownTray />}
-                  href={browser_download_url}
-                  filled
-                >
-                  {name}
-                </StatCard>
+              <Tooltip label={name} position="left" offset={32} openDelay={500}>
+                <div>
+                  <StatCard
+                    key={browser_download_url}
+                    title={`${Math.floor(size / (1024 * 1024))}mb`}
+                    icon={<HiArrowDownTray />}
+                    href={browser_download_url}
+                    filled
+                  >
+                    {name}
+                  </StatCard>
+                </div>
               </Tooltip>
             ))}
         </Box>

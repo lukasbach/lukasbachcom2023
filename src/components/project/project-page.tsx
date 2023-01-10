@@ -140,7 +140,7 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
               ?.filter(isNotNullish)
               .map(download => download?.split(";", 2))
               .map(([url, title]) => (
-                <StatCard title={url} key={url} icon={<HiOutlineArrowDownTray />} href={url}>
+                <StatCard title={url} key={url} icon={<HiOutlineArrowDownTray />} href={url} filled>
                   {title}
                 </StatCard>
               ))}
