@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { Box, Divider, Flex, Group, Text, Title, TypographyStylesProvider } from "@mantine/core";
-import { HiOutlineArrowDownTray } from "react-icons/hi2";
+import { HiOutlineArrowDownTray, HiOutlineTag } from "react-icons/hi2";
 import { PageLayout } from "../layouts/page-layout";
 import { ContentGrid } from "../atoms/content-grid";
 import { StatCard } from "../atoms/stat-card";
 import { CliInput } from "../atoms/cli-input";
 import { isNotNullish, useContainerSize } from "../../util";
+import { ProjectSidebar } from "./project-sidebar";
 
 const useProjectData = (repo?: string) =>
   useStaticQuery<Queries.ProjectDataQuery>(graphql`
@@ -40,7 +41,8 @@ const useProjectData = (repo?: string) =>
               published_at
               assets {
                 name
-                url
+                browser_download_url
+                size
               }
             }
           }
@@ -119,19 +121,7 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
           </StatCard>
         </Group>
       </ContentGrid>
-      <ContentGrid
-        right={
-          <>
-            <CliInput {...repoData?.homepageData} />
-            <dl>
-              <Text component="dt">Homepage</Text>
-              <Box component="dd" m={0}>
-                <Link to="#">asd</Link>
-              </Box>
-            </dl>
-          </>
-        }
-      >
+      <ContentGrid right={<ProjectSidebar repo={repoData} />}>
         <TypographyStylesProvider
           sx={theme => ({
             textAlign: "justify",

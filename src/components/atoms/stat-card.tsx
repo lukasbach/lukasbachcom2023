@@ -1,14 +1,26 @@
 import React, { FC, PropsWithChildren } from "react";
 import { Box, Text } from "@mantine/core";
+import { BoxProps } from "@mantine/core/lib/Box/Box";
 
 export const StatCard: FC<
-  PropsWithChildren<{ title: string; maxWidth?: string; icon?: JSX.Element; href?: string | null }>
-> = ({ title, children, maxWidth, icon, href }) =>
+  PropsWithChildren<{
+    title?: string;
+    maxWidth?: string;
+    icon?: JSX.Element;
+    href?: string | null;
+    filled?: boolean;
+  }>
+> = ({ title, children, maxWidth, icon, href, filled }) =>
   children ? (
     <Box
       component={href ? "a" : "div"}
       href={href!}
       target="_blank"
+      py={8}
+      px={16}
+      ml={-18}
+      mr={filled ? -18 : 24}
+      my={0}
       sx={theme =>
         ({
           display: "block",
@@ -25,18 +37,22 @@ export const StatCard: FC<
             : null,
         } as any)
       }
-      py={8}
-      px={16}
-      ml={-18}
-      mr={24}
-      my={0}
     >
       <Box sx={{ display: "flex", alignItems: "center" }} component="dl" m={0}>
         {icon}
-        <Box ml={icon ? 16 : 0}>
-          <Text component="dt" size="xs">
-            {title}
-          </Text>
+        <Box
+          ml={icon ? 16 : 0}
+          sx={{
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {title && (
+            <Text component="dt" size="xs">
+              {title}
+            </Text>
+          )}
           <Text component="dl" m={0} color="white" size="lg" truncate sx={{ maxWidth }}>
             {children}
           </Text>

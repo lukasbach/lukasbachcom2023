@@ -23,7 +23,7 @@ export const ContentGrid: FC<
           : undefined
       }
     >
-      <Grid gutter={16} {...props}>
+      <Grid gutter={32} {...props}>
         <Grid.Col lg={right ? 9 : 12} sm={right ? 8 : 12}>
           {children}
         </Grid.Col>

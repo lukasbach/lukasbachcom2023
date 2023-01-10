@@ -1,7 +1,7 @@
 -
   repo: react-complex-tree
   title: React Complex Tree
-  npm: react-complex-tree
+  npm: react-complex-tree, react-complex-tree-blueprintjs-renderers, react-complex-tree-autodemo
   category: library
   producthunt: react-complex-tree
   highlight: true
@@ -54,6 +54,7 @@
   category: app
   sonarcloud: lukasbach_devsession
   highlight: true
+  npm: devsession, @devsession/common, @devsession/guibuilder, @devsession/guistarter, @devsession/backend, @devsession/frontend
 -
   repo: swquote
   title: SWQuote
@@ -168,7 +169,7 @@
   repo: ayemitter
   title: Ayemitter
   category: library
-  npm: ayemitter
+  npm: ayemitter, ayemitter-hook
 -
   repo: typed-react-package-starter
   title: Typed React Package Starter

@@ -34,10 +34,9 @@ export const CliInput: FC<{
 
   return (
     <>
-      <Title order={4} mb={8}>
-        {title}
-      </Title>
+      <Title order={4}>{title}</Title>
       <Input
+        mb={32}
         variant="filled"
         readOnly
         icon={<RiTerminalLine size={16} />}
