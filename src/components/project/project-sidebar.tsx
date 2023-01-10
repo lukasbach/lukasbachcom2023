@@ -13,7 +13,7 @@ import { CliInput } from "../atoms/cli-input";
 import { StatCard } from "../atoms/stat-card";
 import { isNotNullish } from "../../util";
 
-const ignoredAssetEndings = [".yml", ".yaml", "blockmap"];
+const ignoredAssetEndings = [".yml", ".yaml", "blockmap", "license", ".json"];
 export const ProjectSidebar: FC<{ repo?: Queries.ProjectDataQuery["allRepo"]["nodes"][0] }> = ({ repo }) => {
   if (!repo) {
     return null;
@@ -82,13 +82,13 @@ export const ProjectSidebar: FC<{ repo?: Queries.ProjectDataQuery["allRepo"]["no
           </StatCard>
           {repo.latestRelease?.data.assets
             ?.filter(isNotNullish)
-            .filter(({ name }) => !ignoredAssetEndings.find(ending => name?.endsWith(ending)))
+            .filter(({ name }) => !ignoredAssetEndings.find(ending => name?.toLowerCase().endsWith(ending)))
             .map(({ name, browser_download_url, size }) => (
               <Tooltip label={name} position="left" offset={32} openDelay={500}>
                 <div>
                   <StatCard
                     key={browser_download_url}
-                    title={`${Math.floor(size / (1024 * 1024))}mb`}
+                    title={`${Math.ceil(size / (1024 * 1024))}mb`}
                     icon={<HiArrowDownTray />}
                     href={browser_download_url}
                     filled
