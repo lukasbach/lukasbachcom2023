@@ -111,12 +111,15 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         .replace(/[^\n]*sonarcloud\.io\/api\/project_badges[^\n]*\n/g, "")
         .replace(/[^\n]*producthunt\.com[^\n]*\n/g, "")
         .replace(/[^\n]*badgen\.net[^\n]*\n/g, "")
-        .replace(/[^\n]*travis-ci.com[^\n.].svg*[^\n]*\n/g, "")
+        .replace(/[^\n]*travis-ci.com[^\n.]*.svg[^\n]*\n/g, "")
         .replace(/[^\n]*badge\.svg[^\n]*\n/g, "") // github workflow badges
         .replace(/\n> [^\n]*/g, "")
         .replace(/\n# [^\n]*/g, "")
         .replace(/^# [^\n]*/g, "")
-        .replace(/\]\((?:\.\/)?([^)]+)\)/g, `](https://github.com/${repo.full_name}/raw/${repo.default_branch}/$1)`);
+        .replace(
+          /\[([^\]]+)]\((?!http)([^)]+)\)/g,
+          `[$1](https://github.com/${repo.full_name}/raw/${repo.default_branch}/$2)`
+        );
 
       writeFileSync(`${__dirname}/content/projects/${repo.name}.md`, `---${frontmatter}\n---\n\n${cleanedReadme}`);
     }
