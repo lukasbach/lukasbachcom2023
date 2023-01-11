@@ -11,10 +11,13 @@ import { PageLayout } from "../components/layouts/page-layout";
 import { TransparentButton } from "../components/atoms/transparent-button";
 import { DetailedListItem } from "../components/atoms/detailed-list-item";
 import { useProjectsByYear } from "../hooks/use-projects-by-year";
+import { useContainerSize } from "../util";
 
 const Page: React.FC<PageProps> = () => {
   const [search, setSearch] = useInputState("");
   const [filters, setFilters] = useState<string[]>([]);
+  const size = useContainerSize();
+  const small = ["xs", "sm"].includes(size);
   const toggleFilter = (filter: string) => setFilters(!filters.includes(filter) ? [filter] : []);
   // setFilters(!filters.includes(filter) ? [...filters, filter] : filters.filter(f => f !== filter));
   const yearList = useProjectsByYear(search, filters);
@@ -26,9 +29,16 @@ const Page: React.FC<PageProps> = () => {
         </Title>
 
         <Flex sx={{ alignItems: "center" }} mt={32}>
-          <Box sx={{ flexGrow: 1 }}>
-            <Input value={search} onChange={setSearch} placeholder="Search projects..." icon={<HiMagnifyingGlass />} />
-          </Box>
+          {!small && (
+            <Box sx={{ flexGrow: 1 }}>
+              <Input
+                value={search}
+                onChange={setSearch}
+                placeholder="Search projects..."
+                icon={<HiMagnifyingGlass />}
+              />
+            </Box>
+          )}
           {["app", "library", "game", "template", "cli", "fun"].map(filter => {
             const isActive = filters.includes(filter);
             return (

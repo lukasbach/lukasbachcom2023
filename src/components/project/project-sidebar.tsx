@@ -84,10 +84,9 @@ export const ProjectSidebar: FC<{ repo?: Queries.ProjectDataQuery["allRepo"]["no
             ?.filter(isNotNullish)
             .filter(({ name }) => !ignoredAssetEndings.find(ending => name?.toLowerCase().endsWith(ending)))
             .map(({ name, browser_download_url, size }) => (
-              <Tooltip label={name} position="left" offset={32} openDelay={500}>
+              <Tooltip label={name} position="left" offset={32} openDelay={500} key={browser_download_url}>
                 <div>
                   <StatCard
-                    key={browser_download_url}
                     title={`${Math.ceil(size / (1024 * 1024))}mb`}
                     icon={<HiArrowDownTray />}
                     href={browser_download_url}

@@ -1,16 +1,15 @@
-import React, { FC } from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
-import { Box, Divider, Flex, Group, Text, Title, TypographyStylesProvider } from "@mantine/core";
-import { HiOutlineArrowDownTray, HiOutlineTag } from "react-icons/hi2";
+import React, { FC, useMemo } from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import { Box, Divider, Flex, Grid, Group, Text, Title, TypographyStylesProvider } from "@mantine/core";
+import { HiChevronLeft, HiChevronRight, HiOutlineArrowDownTray } from "react-icons/hi2";
 import { PageLayout } from "../layouts/page-layout";
 import { ContentGrid } from "../atoms/content-grid";
 import { StatCard } from "../atoms/stat-card";
-import { CliInput } from "../atoms/cli-input";
 import { isNotNullish, useContainerSize } from "../../util";
 import { ProjectSidebar } from "./project-sidebar";
 
-const useProjectData = (repo?: string) =>
-  useStaticQuery<Queries.ProjectDataQuery>(graphql`
+const useProject = (repo?: string) => {
+  const data = useStaticQuery<Queries.ProjectDataQuery>(graphql`
     query ProjectData {
       allRepo {
         nodes {
@@ -59,7 +58,20 @@ const useProjectData = (repo?: string) =>
         }
       }
     }
-  `).allRepo.nodes.find(r => r.full_name === repo);
+  `);
+  return useMemo(() => {
+    const sorted = [...data.allRepo.nodes].sort(
+      (a, b) => new Date(b.created_at ?? "").getTime() - new Date(a.created_at ?? "").getTime()
+    );
+    const index = sorted.findIndex(r => r.full_name === repo);
+
+    return {
+      project: sorted[index],
+      previousProject: sorted[index - 1],
+      nextProject: sorted[index + 1],
+    };
+  }, [data.allRepo.nodes, repo]);
+};
 
 export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRemarkPageQuery["markdownRemark"] }> = ({
   repo,
@@ -67,13 +79,13 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
 }) => {
   const size = useContainerSize();
   const small = ["xs", "sm"].includes(size);
-  const repoData = useProjectData(repo);
+  const { project, previousProject, nextProject } = useProject(repo);
 
   if (!markdownRemark?.frontmatter) {
     return null;
   }
 
-  const githubLink = `https://github.com/${repoData?.full_name}`;
+  const githubLink = `https://github.com/${project?.full_name}`;
 
   return (
     <PageLayout>
@@ -81,13 +93,13 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
         <Flex sx={{ alignItems: small ? "flex-start" : "center", flexDirection: small ? "column" : "row" }}>
           <Box sx={{ flexGrow: 1, fontWeight: 300 }}>
             <Text color="white" sx={{ textTransform: "capitalize" }}>
-              {repoData?.homepageData?.category ?? markdownRemark.frontmatter.category}
+              {project?.homepageData?.category ?? markdownRemark.frontmatter.category}
             </Text>
             <Title order={1} lh={0.9} mb={8} color="white">
-              {repoData?.title ?? markdownRemark.frontmatter.title}
+              {project?.title ?? markdownRemark.frontmatter.title}
             </Title>
             <Text color="white">
-              {new Date(repoData?.created_at ?? markdownRemark.frontmatter.date ?? "").toDateString()}
+              {new Date(project?.created_at ?? markdownRemark.frontmatter.date ?? "").toDateString()}
             </Text>
           </Box>
           <Text
@@ -96,32 +108,32 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
             sx={{ maxWidth: "350px", fontWeight: 300 }}
             ml={small ? 0 : 32}
           >
-            {repoData?.description ?? ""}
+            {project?.description ?? ""}
           </Text>
         </Flex>
 
         <Group sx={{ borderBottom: "1px solid white" }} mb={32} py={16}>
-          <StatCard maxWidth="220px" title="Homepage" href={repoData?.homepage}>
-            {repoData?.homepage}
+          <StatCard maxWidth="220px" title="Homepage" href={project?.homepage}>
+            {project?.homepage}
           </StatCard>
           <StatCard maxWidth="220px" title="Github" href={githubLink}>
-            {repoData?.name}
+            {project?.name}
           </StatCard>
-          <StatCard maxWidth="220px" title="Latest Release" href={repoData?.latestRelease?.data?.html_url}>
-            {repoData?.latestRelease?.data?.name}
+          <StatCard maxWidth="220px" title="Latest Release" href={project?.latestRelease?.data?.html_url}>
+            {project?.latestRelease?.data?.name}
           </StatCard>
           <StatCard maxWidth="220px" title="License">
-            {repoData?.license?.name}
+            {project?.license?.name}
           </StatCard>
           <StatCard maxWidth="220px" title="Stars" href={githubLink}>
-            {repoData?.stargazers_count}
+            {project?.stargazers_count}
           </StatCard>
           <StatCard maxWidth="220px" title="Open Issues" href={`${githubLink}/issues`}>
-            {repoData?.open_issues_count}
+            {project?.open_issues_count}
           </StatCard>
         </Group>
       </ContentGrid>
-      <ContentGrid right={<ProjectSidebar repo={repoData} />}>
+      <ContentGrid right={<ProjectSidebar repo={project} />}>
         <TypographyStylesProvider
           sx={theme => ({
             textAlign: "justify",
@@ -131,6 +143,34 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
         >
           <div dangerouslySetInnerHTML={{ __html: markdownRemark.html ?? "" }} />
         </TypographyStylesProvider>
+        {previousProject || nextProject ? (
+          <Grid>
+            <Grid.Col offsetLg={2} lg={4} md={6}>
+              {previousProject && (
+                <StatCard
+                  title={previousProject.title ?? undefined}
+                  href={`/projects/${previousProject.name}`}
+                  icon={<HiChevronLeft />}
+                  isExternal={false}
+                >
+                  Previous Project
+                </StatCard>
+              )}
+            </Grid.Col>
+            <Grid.Col lg={4} md={6}>
+              {nextProject && (
+                <StatCard
+                  title={nextProject.title ?? undefined}
+                  href={`/projects/${nextProject.name}`}
+                  rightIcon={<HiChevronRight />}
+                  isExternal={false}
+                >
+                  Next Project
+                </StatCard>
+              )}
+            </Grid.Col>
+          </Grid>
+        ) : null}
 
         {markdownRemark.frontmatter.download && (
           <>

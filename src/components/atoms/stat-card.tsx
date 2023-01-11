@@ -7,15 +7,17 @@ export const StatCard: FC<
     title?: string;
     maxWidth?: string;
     icon?: JSX.Element;
+    rightIcon?: JSX.Element;
     href?: string | null;
     filled?: boolean;
+    isExternal?: boolean;
   }>
-> = ({ title, children, maxWidth, icon, href, filled }) =>
+> = ({ title, children, maxWidth, icon, rightIcon, href, filled, isExternal }) =>
   children ? (
     <Box
       component={href ? "a" : "div"}
       href={href!}
-      target="_blank"
+      target={isExternal ?? true ? "_blank" : undefined}
       py={8}
       px={16}
       ml={-18}
@@ -42,6 +44,7 @@ export const StatCard: FC<
         {icon}
         <Box
           ml={icon ? 16 : 0}
+          mr={rightIcon ? 16 : 0}
           sx={{
             whiteSpace: "nowrap",
             overflow: "hidden",
@@ -57,6 +60,7 @@ export const StatCard: FC<
             {children}
           </Text>
         </Box>
+        {rightIcon}
       </Box>
     </Box>
   ) : null;

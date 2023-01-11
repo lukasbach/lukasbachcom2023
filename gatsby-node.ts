@@ -81,9 +81,25 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         ...homepageDataFromYaml,
       };
 
+      const createdAt = new Date(homepageData.created_at ?? repo.created_at).toISOString();
+
       actions.createNode({
         ...repo,
         title: homepageData.title,
+        created_at: createdAt,
+        latestRelease,
+        readme,
+        homepageData,
+        id: createNodeId(repo.full_name),
+        internal: {
+          type: "repo",
+          contentDigest: createContentDigest(repo),
+        },
+      });
+      console.log(repo.full_name, homepageData.created_at, repo.created_at, createdAt, {
+        ...repo,
+        title: homepageData.title,
+        created_at: createdAt,
         latestRelease,
         readme,
         homepageData,
@@ -97,7 +113,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
       const frontmatter = Object.entries({
         slug: `/projects/${repo.name}`,
         title: homepageData.title,
-        date: repo.created_at,
+        date: createdAt,
         repo: repo.full_name,
         kind: "project",
         template: "advanced",
@@ -112,7 +128,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         .replace(/\n> [^\n]*/g, "")
         .replace(/\n# [^\n]*/g, "")
         .replace(/^# [^\n]*/g, "")
-        .replace(/\]\(\.\/([^)]+)\)/g, `](https://github.com/${repo.full_name}/raw/${repo.default_branch}/$1)`);
+        .replace(/\]\((?:\.\/)?([^)]+)\)/g, `](https://github.com/${repo.full_name}/raw/${repo.default_branch}/$1)`);
 
       writeFileSync(`${__dirname}/content/projects/${repo.name}.md`, `---${frontmatter}\n---\n\n${cleanedReadme}`);
     }

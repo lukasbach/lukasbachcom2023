@@ -102,8 +102,8 @@
   repo: react-accessible-menu
   title: React Accessible Menu
   category: library
-  docs: http://lukasbach.github.io/react-accessible-menu/
-  demo: http://lukasbach.github.io/react-accessible-menu/storybook
+  docs: https://lukasbach.github.io/react-accessible-menu/
+  demo: https://lukasbach.github.io/react-accessible-menu/storybook
   npm: react-accessible-menu
 -
   repo: ink-form
@@ -196,10 +196,12 @@
   repo: pixeldrawer
   title: Pixeldrawer
   category: app
+  created_at: 2015-01-01T00:00:00.000Z
 -
   repo: examstats
   title: Examstats
   category: app
+  created_at: 2016-01-01T00:00:00.000Z
 -
   repo: filenode
   title: Filenode
