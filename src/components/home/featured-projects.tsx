@@ -88,7 +88,7 @@ export const FeaturedProjects: FC = () => {
             pictogram={<RctPictogram />}
             svgCss={{
               top: "10px",
-              right: "-50px",
+              right: "-75px",
               height: "100px",
             }}
           />
