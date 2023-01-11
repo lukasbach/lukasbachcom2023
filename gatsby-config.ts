@@ -5,6 +5,8 @@ dotenv.config({
   path: `.env`,
 });
 
+process.env.GATSBY_ENV = process.env.NODE_ENV;
+
 const me = {
   title: `Lukas Bach`,
   shortDescription: "Software engineer at GoTo",
@@ -14,6 +16,7 @@ const me = {
   linkedinUser: "lukasbach",
   twitterUser: "lukmbach",
   mail: "contact@lukasbach.com",
+  counterKey: "lukasbachcom23",
 };
 
 const links = {

@@ -59,7 +59,7 @@ export const ProjectSidebar: FC<{ repo?: Queries.ProjectDataQuery["allRepo"]["no
         <Box mb={32}>
           <Title order={4}>Websites</Title>
           {websites.map(({ name, icon, href }) => (
-            <Tooltip label={href} position="left" offset={32} openDelay={500}>
+            <Tooltip label={href} position="left" offset={32} openDelay={500} key={href}>
               <div>
                 <StatCard key={href} title={href} icon={icon} href={href} filled>
                   {name}

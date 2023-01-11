@@ -96,19 +96,6 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
           contentDigest: createContentDigest(repo),
         },
       });
-      console.log(repo.full_name, homepageData.created_at, repo.created_at, createdAt, {
-        ...repo,
-        title: homepageData.title,
-        created_at: createdAt,
-        latestRelease,
-        readme,
-        homepageData,
-        id: createNodeId(repo.full_name),
-        internal: {
-          type: "repo",
-          contentDigest: createContentDigest(repo),
-        },
-      });
 
       const frontmatter = Object.entries({
         slug: `/projects/${repo.name}`,
@@ -124,6 +111,7 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
         .replace(/[^\n]*sonarcloud\.io\/api\/project_badges[^\n]*\n/g, "")
         .replace(/[^\n]*producthunt\.com[^\n]*\n/g, "")
         .replace(/[^\n]*badgen\.net[^\n]*\n/g, "")
+        .replace(/[^\n]*travis-ci.com[^\n.].svg*[^\n]*\n/g, "")
         .replace(/[^\n]*badge\.svg[^\n]*\n/g, "") // github workflow badges
         .replace(/\n> [^\n]*/g, "")
         .replace(/\n# [^\n]*/g, "")
