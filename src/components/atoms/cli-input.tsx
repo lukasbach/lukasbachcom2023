@@ -1,7 +1,7 @@
 import React, { FC, useRef, useState } from "react";
 import { ActionIcon, Group, Input, Menu, Title, Tooltip } from "@mantine/core";
-import { HiChevronDown, HiOutlineSquare2Stack, RiTerminalLine } from "react-icons/all";
-import { HiCheck } from "react-icons/hi2";
+import { RiTerminalLine } from "react-icons/ri";
+import { HiCheck, HiChevronDown, HiOutlineSquare2Stack } from "react-icons/hi2";
 import { useClipboard } from "@mantine/hooks";
 import { isNotNullish } from "../../util";
 

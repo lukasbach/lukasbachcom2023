@@ -3,7 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { Box, Flex, Input, Title } from "@mantine/core";
 import { Link } from "gatsby";
 import { Fragment, useState } from "react";
-import { HiMagnifyingGlass } from "react-icons/all";
+import { HiMagnifyingGlass } from "react-icons/hi2";
 import { useInputState } from "@mantine/hooks";
 import { PageHead } from "../components/atoms/page-head";
 import { ContentGrid } from "../components/atoms/content-grid";

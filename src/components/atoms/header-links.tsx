@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { ActionIcon, Group, Menu } from "@mantine/core";
+import { Group, Menu } from "@mantine/core";
 import { Link } from "gatsby";
-import { HiChevronDown, HiOutlineBars3 } from "react-icons/all";
+import { HiOutlineBars3 } from "react-icons/hi2";
 import { TransparentButton } from "./transparent-button";
 import { useContainerSize } from "../../util";
 

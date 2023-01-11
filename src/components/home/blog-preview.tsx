@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Text, Center, Grid, Title, Box } from "@mantine/core";
+import { Text, Center, Title, Box } from "@mantine/core";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";

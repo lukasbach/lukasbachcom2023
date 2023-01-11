@@ -37,6 +37,8 @@ module.exports = {
         "react/function-component-definition": "off",
         "react/jsx-props-no-spreading": "off",
         "no-nested-ternary": "off",
-        "react/require-default-props": "off"
+        "react/require-default-props": "off",
+        "@typescript-eslint/ban-types": "off",
+        "react/no-danger": "off"
     }
 };

@@ -1,6 +1,5 @@
 import React, { FC, PropsWithChildren } from "react";
 import { Box, Text } from "@mantine/core";
-import { BoxProps } from "@mantine/core/lib/Box/Box";
 
 export const StatCard: FC<
   PropsWithChildren<{

@@ -1,10 +1,9 @@
 import React, { FC } from "react";
-import { Box, Flex, Group, Title } from "@mantine/core";
+import { Box, Flex, Title } from "@mantine/core";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { HeaderBg } from "./header-bg";
 import { ContentGrid } from "./content-grid";
-import { TransparentButton } from "./transparent-button";
 import { HeaderLinks } from "./header-links";
 
 export const PageHeader: FC = () => (

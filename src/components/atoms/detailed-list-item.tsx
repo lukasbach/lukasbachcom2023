@@ -1,5 +1,5 @@
 import { Box, BoxProps, Flex, Grid, Text, useMantineTheme } from "@mantine/core";
-import { HiStar } from "react-icons/all";
+import { HiStar } from "react-icons/hi2";
 import * as React from "react";
 
 // TODO responsiveness

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, Text, Flex, useMantineTheme, Title, Group, Avatar, Anchor, Stack, Divider } from "@mantine/core";
+import { Box, Text, Flex, useMantineTheme, Title, Group, Anchor, Stack, Divider } from "@mantine/core";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { ContentGrid } from "./content-grid";

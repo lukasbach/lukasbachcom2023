@@ -8,7 +8,8 @@ import {
   HiOutlineExclamationTriangle,
   HiArrowDownTray,
 } from "react-icons/hi2";
-import { DiGithubBadge, RiProductHuntLine } from "react-icons/all";
+import { DiGithubBadge } from "react-icons/di";
+import { RiProductHuntLine } from "react-icons/ri";
 import { CliInput } from "../atoms/cli-input";
 import { StatCard } from "../atoms/stat-card";
 import { isNotNullish } from "../../util";
@@ -87,7 +88,7 @@ export const ProjectSidebar: FC<{ repo?: Queries.ProjectDataQuery["allRepo"]["no
               <Tooltip label={name} position="left" offset={32} openDelay={500} key={browser_download_url}>
                 <div>
                   <StatCard
-                    title={`${Math.ceil(size / (1024 * 1024))}mb`}
+                    title={`${Math.ceil((size ?? 0) / (1024 * 1024))}mb`}
                     icon={<HiArrowDownTray />}
                     href={browser_download_url}
                     filled

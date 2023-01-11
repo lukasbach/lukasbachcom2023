@@ -1,8 +1,10 @@
 import React, { FC } from "react";
 import { Box, Flex, Group, Menu, Text, Title } from "@mantine/core";
 import { StaticImage } from "gatsby-plugin-image";
-import { BsLinkedin, BsMedium, DiGithubBadge, HiOutlineBars3, IoMdMail } from "react-icons/all";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { BsLinkedin, BsMedium } from "react-icons/bs";
+import { DiGithubBadge } from "react-icons/di";
+import { IoMdMail } from "react-icons/io";
+import { graphql, useStaticQuery } from "gatsby";
 import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";
 import { HeaderBg } from "../atoms/header-bg";

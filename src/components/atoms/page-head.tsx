@@ -11,7 +11,7 @@ const useCounterKey = () =>
         }
       }
     }
-  `).site.siteMetadata.counterKey;
+  `).site?.siteMetadata?.counterKey;
 export const PageHead: React.FC<{ title: string | null }> = ({ title }) => {
   const counterKey = useCounterKey();
   const hasCounted = useRef(false);
