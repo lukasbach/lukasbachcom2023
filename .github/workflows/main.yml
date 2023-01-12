@@ -19,7 +19,7 @@ jobs:
       - run: yarn lint:test
       - run: yarn build
         env:
-          GITHUB_API_KEY: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_API_KEY: ${{ secrets.KEY_GITHUB_PAT }}
       # - run: yarn typecheck
       - name: Gatsby Publish
         uses: enriikke/gatsby-gh-pages-action@v2.2.0
@@ -30,4 +30,4 @@ jobs:
           git-config-name: lukasbachbot
           git-config-email: bot@noreply.lukasbach.com
         env:
-          GITHUB_API_KEY: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_API_KEY: ${{ secrets.KEY_GITHUB_PAT }}
