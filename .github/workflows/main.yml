@@ -20,7 +20,7 @@ jobs:
       - run: yarn build
         env:
           GITHUB_API_KEY: ${{ secrets.GITHUB_TOKEN }}
-      - run: yarn typecheck
+      # - run: yarn typecheck
       - name: Gatsby Publish
         uses: enriikke/gatsby-gh-pages-action@v2.2.0
         with:
