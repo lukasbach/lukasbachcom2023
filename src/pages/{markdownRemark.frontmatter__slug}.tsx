@@ -14,6 +14,15 @@ const BlogPost = ({
     return <div>Not loaded..</div>;
   }
 
+  if (markdownRemark.frontmatter.medium || markdownRemark.frontmatter.devto) {
+    return (
+      <meta
+        httpEquiv="Refresh"
+        content={`0; url='${markdownRemark.frontmatter.medium || markdownRemark.frontmatter.devto}'`}
+      />
+    );
+  }
+
   if (markdownRemark.frontmatter.template === "advanced") {
     return <ProjectPage repo={markdownRemark.frontmatter.repo ?? undefined} markdownRemark={markdownRemark} />;
   }
@@ -54,6 +63,8 @@ export const pageQuery = graphql`
         repo
         download
         template
+        medium
+        devto
       }
     }
   }
