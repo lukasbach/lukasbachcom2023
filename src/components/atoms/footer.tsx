@@ -9,9 +9,6 @@ const useFooterData = () =>
   useStaticQuery<Queries.FooterDataQuery>(graphql`
     query FooterData {
       site {
-        jsxRuntime
-        polyfill
-        buildTime(formatString: "MMMM DD, YYYY")
         siteMetadata {
           mail
           links {
