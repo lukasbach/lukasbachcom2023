@@ -150,6 +150,23 @@ const config = {
         path: `./data/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-favicons",
+      options: {
+        logo: "./src/images/icon.png",
+        appName: me.title,
+        background: "#000",
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: true,
+          windows: true,
+        },
+      },
+    },
   ],
 } satisfies GatsbyConfig;
 
