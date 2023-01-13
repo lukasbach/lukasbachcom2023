@@ -2,9 +2,12 @@
 slug: "/blog/typescript-mapping-non-null-values"
 kind: blog
 template: page
-date: "2023-01-05"
-title: "TypeScript: Properly filtering arrays for non-null"
+date: "2023-01-13"
+title: "TypeScript: Properly filtering arrays for non-null values"
+description: "How to use type guards to properly filter an array for non-null values and getting the correct output type without using ugly workarounds."
 category: Typescript
+medium: https://medium.com/@lukasbach/typescript-properly-filtering-arrays-for-non-null-values-c8c1b5563c6a
+devto: https://dev.to/lukasbach/typescript-properly-filtering-arrays-for-non-null-values-3h5n
 ---
 
 If you have used JavaScript and array operations for a while, there is a good chance you wanted to filter an array for non-null values. And if you are using TypeScript, there is a chance you ended up with something along the lines of that:

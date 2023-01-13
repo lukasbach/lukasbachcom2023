@@ -9,3 +9,8 @@ export const useContainerSize = () => {
     .reverse()
     .find(([, size]) => width >= size)?.[0] ?? "xl") as MantineSize;
 };
+
+export const getBlogTarget = (frontmatter?: null | Record<"medium" | "devto" | "slug", string | null | undefined>) => ({
+  href: frontmatter?.medium || frontmatter?.devto || frontmatter?.slug || "#",
+  target: frontmatter?.medium || frontmatter?.devto ? "_blank" : undefined,
+});

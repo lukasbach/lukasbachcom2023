@@ -8,10 +8,12 @@ export const BigListItem: FC<{
   right: JSX.Element;
   left: JSX.Element;
   to: string;
-}> = ({ title, text, left, right, to }) => (
+  target?: string;
+}> = ({ title, text, left, right, to, target }) => (
   <Box
     component={Link}
     to={to}
+    target={target}
     sx={theme => ({
       display: "block",
       fontSize: "14px",

@@ -5,6 +5,7 @@ import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";
 import { BigListItem } from "../atoms/big-list-item";
 import { CategoryText } from "../atoms/category-text";
+import { getBlogTarget } from "../../util";
 
 const useBlogEntries = () =>
   useStaticQuery<Queries.BlogPreviewQuery>(graphql`
@@ -21,6 +22,8 @@ const useBlogEntries = () =>
             title
             category
             date(formatString: "MMMM DD, YYYY")
+            medium
+            devto
           }
           excerpt(truncate: true, format: PLAIN, pruneLength: 200)
         }
@@ -57,7 +60,8 @@ export const BlogPreview: FC = () => {
                 <Text>{article.timeToRead ?? 5} minutes</Text>
               </>
             }
-            to={article.frontmatter?.slug ?? ""}
+            to={getBlogTarget(article.frontmatter).href}
+            target={getBlogTarget(article.frontmatter).target}
           />
         ))}
       </ContentGrid>

@@ -1,6 +1,6 @@
 ---
 slug: "/blog/typescript-the-many-types-of-nothing"
-kind: blog
+kind: draft
 template: page
 date: "2023-01-05"
 title: "TypeScript: The many types of nothing"

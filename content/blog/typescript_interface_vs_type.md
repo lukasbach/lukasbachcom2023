@@ -1,6 +1,6 @@
 ---
 slug: "/blog/typescript-interfaces-vs-types"
-kind: blog
+kind: draft
 template: page
 date: "2023-01-04"
 title: "TypeScript: Interfaces vs. Types - What to use?"
