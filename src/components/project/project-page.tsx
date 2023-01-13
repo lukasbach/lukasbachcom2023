@@ -143,7 +143,23 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
         >
           <div dangerouslySetInnerHTML={{ __html: markdownRemark.html ?? "" }} />
         </TypographyStylesProvider>
-        {previousProject || nextProject ? (
+
+        {markdownRemark.frontmatter.download && (
+          <>
+            <Divider mt={48} mb={32} color="white" />
+            <Title order={2}>Downloads</Title>
+            {markdownRemark.frontmatter.download
+              ?.filter(isNotNullish)
+              .map(download => download?.split(";", 2))
+              .map(([url, title]) => (
+                <StatCard title={url} key={url} icon={<HiOutlineArrowDownTray />} href={url} filled>
+                  {title}
+                </StatCard>
+              ))}
+          </>
+        )}
+
+        {(previousProject || nextProject) && markdownRemark.frontmatter.kind === "project" ? (
           <Grid>
             <Grid.Col offsetLg={2} lg={4} md={6}>
               {previousProject && (
@@ -171,21 +187,6 @@ export const ProjectPage: FC<{ repo?: string; markdownRemark: Queries.MarkdownRe
             </Grid.Col>
           </Grid>
         ) : null}
-
-        {markdownRemark.frontmatter.download && (
-          <>
-            <Divider mt={48} mb={32} color="white" />
-            <Title order={2}>Downloads</Title>
-            {markdownRemark.frontmatter.download
-              ?.filter(isNotNullish)
-              .map(download => download?.split(";", 2))
-              .map(([url, title]) => (
-                <StatCard title={url} key={url} icon={<HiOutlineArrowDownTray />} href={url} filled>
-                  {title}
-                </StatCard>
-              ))}
-          </>
-        )}
       </ContentGrid>
     </PageLayout>
   );
