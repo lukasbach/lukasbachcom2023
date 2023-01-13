@@ -68,8 +68,5 @@
   "volta": {
     "node": "18.13.0",
     "yarn": "3.3.1"
-  },
-  "resolutions": {
-    "sharp": "0.28.0"
   }
 }
