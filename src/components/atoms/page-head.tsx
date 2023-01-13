@@ -68,7 +68,7 @@ export const PageHead: React.FC<{ title: string | null; description?: string | n
       <meta name="twitter:image" content={image} />
       <meta name="twitter:creator" content={data?.twitterUser ?? ""} />
       <meta name="twitter:site" content={data?.twitterUser ?? ""} />
-      <meta property="og:url" content={window.location.pathname} />
+      {/* <meta property="og:url" content={window.location.pathname} /> */}
       <meta property="og:title" content={title ?? data?.title ?? ""} />
       <meta property="og:type" content="website" />
       {/* TODO https://ogp.me/#no_vertical */}

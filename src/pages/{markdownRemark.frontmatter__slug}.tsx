@@ -45,7 +45,7 @@ const BlogPost = ({
 
 export default BlogPost;
 // eslint-disable-next-line react/prop-types
-export const Head: HeadFC<Queries.Query> = ({ data }) => (
+export const Head: HeadFC<Queries.MarkdownRemarkPageQuery> = ({ data }) => (
   <PageHead
     // eslint-disable-next-line react/prop-types
     title={data.markdownRemark?.frontmatter?.title ?? null}
@@ -58,6 +58,7 @@ export const pageQuery = graphql`
   query MarkdownRemarkPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
+      excerpt(truncate: true, pruneLength: 300)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
