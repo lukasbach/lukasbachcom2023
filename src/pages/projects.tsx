@@ -82,4 +82,6 @@ const Page: React.FC<PageProps> = () => {
 
 export default Page;
 
-export const Head: HeadFC = () => <PageHead title="Projects" />;
+export const Head: HeadFC = () => (
+  <PageHead title="Projects" description="A list of programming projects I have worked on over the years." />
+);

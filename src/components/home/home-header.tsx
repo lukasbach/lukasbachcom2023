@@ -17,6 +17,7 @@ const useLinks = () =>
       site {
         siteMetadata {
           mail
+          description
           links {
             github
             linkedin
@@ -30,7 +31,7 @@ const useLinks = () =>
   `)?.site?.siteMetadata;
 
 export const HomeHeader: FC = () => {
-  const { links } = useLinks() ?? {};
+  const { links, description } = useLinks() ?? {};
   const size = useContainerSize();
   const small = ["xs", "sm", "md"].includes(size);
   return (
@@ -45,8 +46,7 @@ export const HomeHeader: FC = () => {
           <Box pl={32} sx={{ color: "white", flexGrow: 1 }}>
             <Title>Lukas Bach</Title>
             <Text ff="'Exo 2', sans-serif" ta="justify">
-              I am a software engineer focused on frontend development. I primarily work with TypeScript and React, and
-              am interested in accessibility, infrastructure and architecture. Currently, I work at GoTo.
+              {description}
             </Text>
           </Box>
         </Group>

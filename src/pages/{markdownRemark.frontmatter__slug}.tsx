@@ -46,8 +46,12 @@ const BlogPost = ({
 export default BlogPost;
 // eslint-disable-next-line react/prop-types
 export const Head: HeadFC<Queries.Query> = ({ data }) => (
-  // eslint-disable-next-line react/prop-types
-  <PageHead title={data.markdownRemark?.frontmatter?.title ?? null} />
+  <PageHead
+    // eslint-disable-next-line react/prop-types
+    title={data.markdownRemark?.frontmatter?.title ?? null}
+    // eslint-disable-next-line react/prop-types
+    description={data.markdownRemark?.frontmatter?.description ?? data.markdownRemark?.excerpt}
+  />
 );
 
 export const pageQuery = graphql`

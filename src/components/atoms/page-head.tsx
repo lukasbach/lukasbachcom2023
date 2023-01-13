@@ -2,18 +2,27 @@ import * as React from "react";
 import { useEffect, useRef } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-const useCounterKey = () =>
-  useStaticQuery<Queries.CounterDataQuery>(graphql`
-    query CounterData {
+const useHeadData = () =>
+  useStaticQuery<Queries.HeadDataQuery>(graphql`
+    query HeadData {
       site {
         siteMetadata {
           counterKey
+          twitterUser
+          title
+          description
+          shortDescription
+          siteUrl
+          mail
+          links {
+            twitter
+          }
         }
       }
     }
-  `).site?.siteMetadata?.counterKey;
-export const PageHead: React.FC<{ title: string | null }> = ({ title }) => {
-  const counterKey = useCounterKey();
+  `).site?.siteMetadata;
+
+const useCounter = (counterKey: string) => {
   const hasCounted = useRef(false);
   useEffect(() => {
     if (hasCounted.current) {
@@ -37,11 +46,36 @@ export const PageHead: React.FC<{ title: string | null }> = ({ title }) => {
     }
     hasCounted.current = true;
   }, [counterKey]);
+};
+
+export const PageHead: React.FC<{ title: string | null; description?: string | null }> = ({ title, description }) => {
+  const data = useHeadData();
+  useCounter(data?.counterKey ?? "lukasbachcom23");
+  const pageTitle = `${title === null ? "" : `${title} - `}lukasbach.com`;
+  const descr = description ?? data?.description ?? "";
+  const image = "/icon.png";
   return (
     <>
-      <title>{title === null ? "" : `${title} - `}lukasbach.com</title>
+      <title>{pageTitle}</title>
       <link rel="preconnect" href="https://fonts.lukasbach.com" crossOrigin="true" />
       <link href="https://fonts.lukasbach.com/homepage2023.css" rel="stylesheet" />
+      <meta name="description" content={descr} />
+      <meta name="image" content={image} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={title ?? data?.title ?? ""} />
+      <meta name="twitter:url" content={data?.links?.twitter ?? ""} />
+      <meta name="twitter:description" content={descr} />
+      <meta name="twitter:image" content={image} />
+      <meta name="twitter:creator" content={data?.twitterUser ?? ""} />
+      <meta name="twitter:site" content={data?.twitterUser ?? ""} />
+      <meta property="og:url" content={window.location.pathname} />
+      <meta property="og:title" content={title ?? data?.title ?? ""} />
+      <meta property="og:type" content="website" />
+      {/* TODO https://ogp.me/#no_vertical */}
+      <meta property="og:description" content={descr} />
+      <meta property="og:image" content={image} />
+      <meta property="og:site_name" content={data?.title ?? ""} />
+      <meta property="og:locale" content="en_US" />
     </>
   );
 };

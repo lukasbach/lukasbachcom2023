@@ -9,6 +9,9 @@ process.env.GATSBY_ENV = process.env.NODE_ENV;
 
 const me = {
   title: `Lukas Bach`,
+  description:
+    "I am a software engineer focused on frontend development. I primarily work with TypeScript and " +
+    "React, and am interested in accessibility, infrastructure and architecture. Currently, I am working at GoTo in Karlsruhe.",
   shortDescription: "Software engineer at GoTo",
   siteUrl: `https://lukasbach.com`,
   githubUser: "lukasbach",
