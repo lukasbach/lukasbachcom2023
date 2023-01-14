@@ -5,9 +5,10 @@ export const isNotNullish = <T>(value: T | null | undefined | false): value is T
 export const useContainerSize = () => {
   const theme = useMantineTheme();
   const { width } = useViewportSize();
+  console.log(theme.breakpoints, width);
   return (Object.entries(theme.breakpoints)
     .reverse()
-    .find(([, size]) => width >= size)?.[0] ?? "xl") as MantineSize;
+    .find(([, size]) => width >= size)?.[0] ?? "xs") as MantineSize;
 };
 
 export const getBlogTarget = (frontmatter?: null | Record<"medium" | "devto" | "slug", string | null | undefined>) => ({

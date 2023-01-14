@@ -34,16 +34,19 @@ export const HomeHeader: FC = () => {
   const { links, description } = useLinks() ?? {};
   const size = useContainerSize();
   const small = ["xs", "sm", "md"].includes(size);
+  const showProfileImage = !["xs"].includes(size);
   return (
     <HeaderBg maxHeight={500} bgOpacity={0.6} gradientStart={0.25}>
       <ContentGrid pt={140} wide>
         <Group noWrap>
-          <StaticImage
-            src="../../images/profile.jpg"
-            alt="Profile Image"
-            style={{ borderRadius: 999, minWidth: 128, width: 128 }}
-          />
-          <Box pl={32} sx={{ color: "white", flexGrow: 1 }}>
+          {showProfileImage && (
+            <StaticImage
+              src="../../images/profile.jpg"
+              alt="Profile Image"
+              style={{ borderRadius: 999, minWidth: 128, width: 128 }}
+            />
+          )}
+          <Box pl={showProfileImage ? 32 : 0} sx={{ color: "white", flexGrow: 1 }}>
             <Title>Lukas Bach</Title>
             <Text ff="'Exo 2', sans-serif" ta="justify">
               {description}
