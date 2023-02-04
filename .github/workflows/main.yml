@@ -20,6 +20,7 @@ jobs:
       - run: yarn build
         env:
           GITHUB_API_KEY: ${{ secrets.KEY_GITHUB_PAT }}
+      - run: npx redirectgen -o ./public -c ./data/short-links.yaml
       # - run: yarn typecheck
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
