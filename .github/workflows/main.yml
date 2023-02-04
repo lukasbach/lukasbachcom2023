@@ -21,13 +21,12 @@ jobs:
         env:
           GITHUB_API_KEY: ${{ secrets.KEY_GITHUB_PAT }}
       # - run: yarn typecheck
-      - name: Gatsby Publish
-        uses: enriikke/gatsby-gh-pages-action@v2.2.0
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          access-token: ${{ secrets.KEY_GITHUB_PAT }}
-          deploy-branch: gh-pages
-          gatsby-args: --no-color
-          git-config-name: lukasbachbot
-          git-config-email: bot@noreply.lukasbach.com
-        env:
-          GITHUB_API_KEY: ${{ secrets.KEY_GITHUB_PAT }}
+          github_token: ${{ secrets.KEY_GITHUB_PAT }}
+          publish_dir: ./public
+          cname: lukasbach.com
+          force_orphan: true
+          git-user_name-name: lukasbachbot
+          git-user_email-email: bot@noreply.lukasbach.com
