@@ -29,5 +29,5 @@ jobs:
           publish_dir: ./public
           cname: lukasbach.com
           force_orphan: true
-          git-user_name-name: lukasbachbot
-          git-user_email-email: bot@noreply.lukasbach.com
+          user_name: lukasbachbot
+          user_email: bot@noreply.lukasbach.com
