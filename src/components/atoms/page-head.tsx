@@ -59,6 +59,7 @@ export const PageHead: React.FC<{ title: string | null; description?: string | n
       <title>{pageTitle}</title>
       <link rel="preconnect" href="https://fonts.lukasbach.com" crossOrigin="true" />
       <link href="https://fonts.lukasbach.com/homepage2023.css" rel="stylesheet" />
+      <meta name="google-site-verification" content="xbg7EmRLFFlN2mVUh8zeGlM6LZTfTBqVM-2LK5U5RTM" />
       <meta name="description" content={descr} />
       <meta name="image" content={image} />
       <meta name="twitter:card" content="summary" />
