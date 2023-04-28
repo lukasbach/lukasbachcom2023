@@ -2,7 +2,7 @@
 slug: "/blog/typescript-the-many-types-of-nothing"
 kind: blog
 template: page
-date: "2023-01-05"
+date: "2023-03-30"
 title: "TypeScript: The many types of nothing"
 description: "An in-depth exploration of TypeScripts compile-time and run-time variants of various null-like symbols."
 category: Typescript
