@@ -4,7 +4,7 @@ kind: blog
 template: page  
 date: "2023-04-28"  
 title: "A more streamlined development workflow for Obsidian plugins"  
-category: obsidian, obsidian-plugins, development
+category: Obsidian
 medium: https://medium.com/@lukasbach/a-more-streamlined-development-workflow-for-obsidian-plugins-2a74b0c57c0f
 devto: https://dev.to/lukasbach/a-more-streamlined-development-workflow-for-obsidian-plugins-5hm5
 ---  
