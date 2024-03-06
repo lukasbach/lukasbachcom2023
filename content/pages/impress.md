@@ -19,7 +19,7 @@ St. Johännser Ring 40
 
 Deutschland
 
-**E-Mail:** [contact@lukasbach.com](mailto:contact@lukasbach.com)
+**E-Mail:** [contact@lukasbach.com](mailto:contact@lukasbach.com)
 
 **Kontaktdaten des Verantwortlichen für Datenschutz**  
 Sollten Sie Fragen zum Datenschutz haben, finden Sie nachfolgend die Kontaktdaten der verantwortlichen Person bzw. Stelle:
@@ -30,12 +30,12 @@ St. Johännser Ring 40
 
 71665 Vaihingen an der Enz  
 
-E-Mail-Adresse: [contact@lukasbach.com](mailto:contact@lukasbach.com)
+E-Mail-Adresse: [contact@lukasbach.com](mailto:contact@lukasbach.com)
 
 ## EU-Streitschlichtung
 
 Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.  
-Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter [https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE](https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE) zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.
+Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter [https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE](https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE) zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.
 
 Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
@@ -61,7 +61,7 @@ Sollten Sie auf dieser Webseite Inhalte finden, die das Urheberrecht verletzen, 
 
 Alle Texte sind urheberrechtlich geschützt.
 
-Quelle: Erstellt mit dem [Impressum Generator](https://www.adsimple.de/impressum-generator/ "Impressum Generator Deutschland von AdSimple") von AdSimple
+Quelle: Erstellt mit dem [Impressum Generator](https://www.adsimple.de/impressum-generator/ "Impressum Generator Deutschland von AdSimple") von AdSimple
 
 
 
@@ -69,10 +69,10 @@ Quelle: Erstellt mit dem [Impressum Generator](https://www.adsimple.de/impressu
 
 ## Einleitung und Überblick
 
-Wir haben diese Datenschutzerklärung (Fassung 28.02.2024-322736824) verfasst, um Ihnen gemäß der Vorgaben der [Datenschutz-Grundverordnung (EU) 2016/679](https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE&tid=322736824#d1e2269-1-1) und anwendbaren nationalen Gesetzen zu erklären, welche personenbezogenen Daten (kurz Daten) wir als Verantwortliche – und die von uns beauftragten Auftragsverarbeiter (z. B. Provider) – verarbeiten, zukünftig verarbeiten werden und welche rechtmäßigen Möglichkeiten Sie haben. Die verwendeten Begriffe sind geschlechtsneutral zu verstehen.  
-**Kurz gesagt:** Wir informieren Sie umfassend über Daten, die wir über Sie verarbeiten.
+Wir haben diese Datenschutzerklärung (Fassung 28.02.2024-322736824) verfasst, um Ihnen gemäß der Vorgaben der [Datenschutz-Grundverordnung (EU) 2016/679](https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE&tid=322736824#d1e2269-1-1) und anwendbaren nationalen Gesetzen zu erklären, welche personenbezogenen Daten (kurz Daten) wir als Verantwortliche – und die von uns beauftragten Auftragsverarbeiter (z. B. Provider) – verarbeiten, zukünftig verarbeiten werden und welche rechtmäßigen Möglichkeiten Sie haben. Die verwendeten Begriffe sind geschlechtsneutral zu verstehen.  
+**Kurz gesagt:** Wir informieren Sie umfassend über Daten, die wir über Sie verarbeiten.
 
-Datenschutzerklärungen klingen für gewöhnlich sehr technisch und verwenden juristische Fachbegriffe. Diese Datenschutzerklärung soll Ihnen hingegen die wichtigsten Dinge so einfach und transparent wie möglich beschreiben. Soweit es der Transparenz förderlich ist, werden technische **Begriffe leserfreundlich erklärt**, Links zu weiterführenden Informationen geboten und **Grafiken** zum Einsatz gebracht. Wir informieren damit in klarer und einfacher Sprache, dass wir im Rahmen unserer Geschäftstätigkeiten nur dann personenbezogene Daten verarbeiten, wenn eine entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe, unklare und juristisch-technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um Datenschutz geht. Ich hoffe, Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine oder andere Information dabei, die Sie noch nicht kannten.  
+Datenschutzerklärungen klingen für gewöhnlich sehr technisch und verwenden juristische Fachbegriffe. Diese Datenschutzerklärung soll Ihnen hingegen die wichtigsten Dinge so einfach und transparent wie möglich beschreiben. Soweit es der Transparenz förderlich ist, werden technische **Begriffe leserfreundlich erklärt**, Links zu weiterführenden Informationen geboten und **Grafiken** zum Einsatz gebracht. Wir informieren damit in klarer und einfacher Sprache, dass wir im Rahmen unserer Geschäftstätigkeiten nur dann personenbezogene Daten verarbeiten, wenn eine entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe, unklare und juristisch-technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um Datenschutz geht. Ich hoffe, Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine oder andere Information dabei, die Sie noch nicht kannten.  
 Wenn trotzdem Fragen bleiben, möchten wir Sie bitten, sich an die unten bzw. im Impressum genannte verantwortliche Stelle zu wenden, den vorhandenen Links zu folgen und sich weitere Informationen auf Drittseiten anzusehen. Unsere Kontaktdaten finden Sie selbstverständlich auch im Impressum.
 
 ## Anwendungsbereich
@@ -83,26 +83,26 @@ Diese Datenschutzerklärung gilt für alle von uns im Unternehmen verarbeiteten 
 - Social Media Auftritte und E-Mail-Kommunikation
 - mobile Apps für Smartphones und andere Geräte
 
-**Kurz gesagt:** Die Datenschutzerklärung gilt für alle Bereiche, in denen personenbezogene Daten im Unternehmen über die genannten Kanäle strukturiert verarbeitet werden. Sollten wir außerhalb dieser Kanäle mit Ihnen in Rechtsbeziehungen eintreten, werden wir Sie gegebenenfalls gesondert informieren.
+**Kurz gesagt:** Die Datenschutzerklärung gilt für alle Bereiche, in denen personenbezogene Daten im Unternehmen über die genannten Kanäle strukturiert verarbeitet werden. Sollten wir außerhalb dieser Kanäle mit Ihnen in Rechtsbeziehungen eintreten, werden wir Sie gegebenenfalls gesondert informieren.
 
 ## Rechtsgrundlagen
 
 In der folgenden Datenschutzerklärung geben wir Ihnen transparente Informationen zu den rechtlichen Grundsätzen und Vorschriften, also den Rechtsgrundlagen der Datenschutz-Grundverordnung, die uns ermöglichen, personenbezogene Daten zu verarbeiten.  
-Was das EU-Recht betrifft, beziehen wir uns auf die VERORDNUNG (EU) 2016/679 DES EUROPÄISCHEN PARLAMENTS UND DES RATES vom 27. April 2016. Diese Datenschutz-Grundverordnung der EU können Sie selbstverständlich online auf EUR-Lex, dem Zugang zum EU-Recht, unter [https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679](https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679) nachlesen.
+Was das EU-Recht betrifft, beziehen wir uns auf die VERORDNUNG (EU) 2016/679 DES EUROPÄISCHEN PARLAMENTS UND DES RATES vom 27. April 2016. Diese Datenschutz-Grundverordnung der EU können Sie selbstverständlich online auf EUR-Lex, dem Zugang zum EU-Recht, unter [https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679](https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679) nachlesen.
 
 Wir verarbeiten Ihre Daten nur, wenn mindestens eine der folgenden Bedingungen zutrifft:
 
-1. **Einwilligung** (Artikel 6 Absatz 1 lit. a DSGVO): Sie haben uns Ihre Einwilligung gegeben, Daten zu einem bestimmten Zweck zu verarbeiten. Ein Beispiel wäre die Speicherung Ihrer eingegebenen Daten eines Kontaktformulars.
-2. **Vertrag** (Artikel 6 Absatz 1 lit. b DSGVO): Um einen Vertrag oder vorvertragliche Verpflichtungen mit Ihnen zu erfüllen, verarbeiten wir Ihre Daten. Wenn wir zum Beispiel einen Kaufvertrag mit Ihnen abschließen, benötigen wir vorab personenbezogene Informationen.
-3. **Rechtliche Verpflichtung** (Artikel 6 Absatz 1 lit. c DSGVO): Wenn wir einer rechtlichen Verpflichtung unterliegen, verarbeiten wir Ihre Daten. Zum Beispiel sind wir gesetzlich verpflichtet Rechnungen für die Buchhaltung aufzuheben. Diese enthalten in der Regel personenbezogene Daten.
-4. **Berechtigte Interessen** (Artikel 6 Absatz 1 lit. f DSGVO): Im Falle berechtigter Interessen, die Ihre Grundrechte nicht einschränken, behalten wir uns die Verarbeitung personenbezogener Daten vor. Wir müssen zum Beispiel gewisse Daten verarbeiten, um unsere Website sicher und wirtschaftlich effizient betreiben zu können. Diese Verarbeitung ist somit ein berechtigtes Interesse.
+1. **Einwilligung** (Artikel 6 Absatz 1 lit. a DSGVO): Sie haben uns Ihre Einwilligung gegeben, Daten zu einem bestimmten Zweck zu verarbeiten. Ein Beispiel wäre die Speicherung Ihrer eingegebenen Daten eines Kontaktformulars.
+2. **Vertrag** (Artikel 6 Absatz 1 lit. b DSGVO): Um einen Vertrag oder vorvertragliche Verpflichtungen mit Ihnen zu erfüllen, verarbeiten wir Ihre Daten. Wenn wir zum Beispiel einen Kaufvertrag mit Ihnen abschließen, benötigen wir vorab personenbezogene Informationen.
+3. **Rechtliche Verpflichtung** (Artikel 6 Absatz 1 lit. c DSGVO): Wenn wir einer rechtlichen Verpflichtung unterliegen, verarbeiten wir Ihre Daten. Zum Beispiel sind wir gesetzlich verpflichtet Rechnungen für die Buchhaltung aufzuheben. Diese enthalten in der Regel personenbezogene Daten.
+4. **Berechtigte Interessen** (Artikel 6 Absatz 1 lit. f DSGVO): Im Falle berechtigter Interessen, die Ihre Grundrechte nicht einschränken, behalten wir uns die Verarbeitung personenbezogener Daten vor. Wir müssen zum Beispiel gewisse Daten verarbeiten, um unsere Website sicher und wirtschaftlich effizient betreiben zu können. Diese Verarbeitung ist somit ein berechtigtes Interesse.
 
 Weitere Bedingungen wie die Wahrnehmung von Aufnahmen im öffentlichen Interesse und Ausübung öffentlicher Gewalt sowie dem Schutz lebenswichtiger Interessen treten bei uns in der Regel nicht auf. Soweit eine solche Rechtsgrundlage doch einschlägig sein sollte, wird diese an der entsprechenden Stelle ausgewiesen.
 
 Zusätzlich zu der EU-Verordnung gelten auch noch nationale Gesetze:
 
-- In **Österreich** ist dies das Bundesgesetz zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten (**Datenschutzgesetz**), kurz **DSG**.
-- In **Deutschland** gilt das **Bundesdatenschutzgesetz**, kurz **BDSG**.
+- In **Österreich** ist dies das Bundesgesetz zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten (**Datenschutzgesetz**), kurz **DSG**.
+- In **Deutschland** gilt das **Bundesdatenschutzgesetz**, kurz **BDSG**.
 
 Sofern weitere regionale oder nationale Gesetze zur Anwendung kommen, informieren wir Sie in den folgenden Abschnitten darüber.
 
@@ -113,7 +113,7 @@ Sollten Sie Fragen zum Datenschutz oder zur Verarbeitung personenbezogener Daten
 Lukas Bach
 St. Johännser Ring 40
 71665 Vaihingen an der Enz  
-E-Mail-Adresse: [contact@lukasbach.com](mailto:contact@lukasbach.com)
+E-Mail-Adresse: [contact@lukasbach.com](mailto:contact@lukasbach.com)
 
 ## Speicherdauer
 
@@ -147,23 +147,23 @@ Gemäß Artikel 13, 14 DSGVO informieren wir Sie über die folgenden Rechte, die
 - Sie haben laut Artikel 22 DSGVO unter Umständen das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung (zum Beispiel Profiling) beruhenden Entscheidung unterworfen zu werden.
 - Sie haben laut Artikel 77 DSGVO das Recht auf Beschwerde. Das heißt, Sie können sich jederzeit bei der Datenschutzbehörde beschweren, wenn Sie der Meinung sind, dass die Datenverarbeitung von personenbezogenen Daten gegen die DSGVO verstößt.
 
-**Kurz gesagt:** Sie haben Rechte – zögern Sie nicht, die oben gelistete verantwortliche Stelle bei uns zu kontaktieren!
+**Kurz gesagt:** Sie haben Rechte – zögern Sie nicht, die oben gelistete verantwortliche Stelle bei uns zu kontaktieren!
 
-Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche in sonst einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren. Diese ist für Österreich die Datenschutzbehörde, deren Website Sie unter [https://www.dsb.gv.at/](https://www.dsb.gv.at/?tid=322736824) finden. In Deutschland gibt es für jedes Bundesland einen Datenschutzbeauftragten. Für nähere Informationen können Sie sich an die [Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)](https://www.bfdi.bund.de/DE/Home/home_node.html) wenden. Für unser Unternehmen ist die folgende lokale Datenschutzbehörde zuständig:
+Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche in sonst einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren. Diese ist für Österreich die Datenschutzbehörde, deren Website Sie unter [https://www.dsb.gv.at/](https://www.dsb.gv.at/?tid=322736824) finden. In Deutschland gibt es für jedes Bundesland einen Datenschutzbeauftragten. Für nähere Informationen können Sie sich an die [Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)](https://www.bfdi.bund.de/DE/Home/home_node.html) wenden. Für unser Unternehmen ist die folgende lokale Datenschutzbehörde zuständig:
 
 ## Baden-Württemberg Datenschutzbehörde
 
-**Landesbeauftragter für Datenschutz:** Prof. Dr. Tobias Keber  
-**Adresse:** Lautenschlagerstraße 20, 70173 Stuttgart  
-**Telefonnr.:** 07 11/61 55 41-0  
-**E-Mail-Adresse:** [poststelle@lfdi.bwl.de](mailto:poststelle@lfdi.bwl.de)  
-**Website:** [https://www.baden-wuerttemberg.datenschutz.de/](https://www.baden-wuerttemberg.datenschutz.de/?tid=322736824)
+**Landesbeauftragter für Datenschutz:** Prof. Dr. Tobias Keber  
+**Adresse:** Lautenschlagerstraße 20, 70173 Stuttgart  
+**Telefonnr.:** 07 11/61 55 41-0  
+**E-Mail-Adresse:** [poststelle@lfdi.bwl.de](mailto:poststelle@lfdi.bwl.de)  
+**Website:** [https://www.baden-wuerttemberg.datenschutz.de/](https://www.baden-wuerttemberg.datenschutz.de/?tid=322736824)
 
 ## Datenübertragung in Drittländer
 
 Wir übertragen oder verarbeiten Daten nur dann in Länder außerhalb des Geltungsbereichs der DSGVO (Drittländer), wenn Sie in diese Verarbeitung einwilligen oder eine sonstige gesetzliche Erlaubnis besteht. Dies trifft insbesondere zu, wenn die Verarbeitung gesetzlich vorgeschrieben oder zur Erfüllung eines Vertragsverhältnisses notwendig und in jedem Fall nur soweit dies generell erlaubt ist. Ihre Zustimmung ist in den meisten Fällen der wichtigste Grund, dass wir Daten in Drittländern verarbeiten lassen. Die Verarbeitung personenbezogener Daten in Drittländern wie den USA, wo viele Softwarehersteller Dienstleistungen anbieten und Ihre Serverstandorte haben, kann bedeuten, dass personenbezogene Daten auf unerwartete Weise verarbeitet und gespeichert werden.
 
-Wir weisen ausdrücklich darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit nur dann ein angemessenes Schutzniveau für den Datentransfer in die USA besteht, wenn ein US-Unternehmen, das personenbezogene Daten von EU-Bürgern in den USA verarbeitet, aktiver Teilnehmer des EU-US Data Privacy Frameworks ist. Mehr Informationen dazu finden Sie unter: [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en)
+Wir weisen ausdrücklich darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit nur dann ein angemessenes Schutzniveau für den Datentransfer in die USA besteht, wenn ein US-Unternehmen, das personenbezogene Daten von EU-Bürgern in den USA verarbeitet, aktiver Teilnehmer des EU-US Data Privacy Frameworks ist. Mehr Informationen dazu finden Sie unter: [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en)
 
 Die Datenverarbeitung durch US-Dienste, die nicht aktive Teilnehmer des EU-US Data Privacy Frameworks sind, kann dazu führen, dass gegebenenfalls Daten nicht anonymisiert verarbeitet und gespeichert werden. Ferner können gegebenenfalls US-amerikanische staatliche Behörden Zugriff auf einzelne Daten nehmen. Zudem kann es vorkommen, dass erhobene Daten mit Daten aus anderen Diensten desselben Anbieters, sofern Sie ein entsprechendes Nutzerkonto haben, verknüpft werden. Nach Möglichkeit versuchen wir Serverstandorte innerhalb der EU zu nutzen, sofern das angeboten wird.  
 Wir informieren Sie an den passenden Stellen dieser Datenschutzerklärung genauer über Datenübertragung in Drittländer, sofern diese zutrifft.
@@ -180,7 +180,7 @@ TLS, Verschlüsselung und https klingen sehr technisch und sind es auch. Wir ver
 Das bedeutet, dass die komplette Übertragung aller Daten von Ihrem Browser zu unserem Webserver abgesichert ist – niemand kann “mithören”.
 
 Damit haben wir eine zusätzliche Sicherheitsschicht eingeführt und erfüllen den Datenschutz durch Technikgestaltung ([Artikel 25 Absatz 1 DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE&tid=322736824)). Durch den Einsatz von TLS (Transport Layer Security), einem Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet, können wir den Schutz vertraulicher Daten sicherstellen.  
-Sie erkennen die Benutzung dieser Absicherung der Datenübertragung am kleinen Schlosssymbo links oben im Browser, links von der Internetadresse (z. B. beispielseite.de) und der Verwendung des Schemas https (anstatt http) als Teil unserer Internetadresse.  
+Sie erkennen die Benutzung dieser Absicherung der Datenübertragung am kleinen Schlosssymbo links oben im Browser, links von der Internetadresse (z. B. beispielseite.de) und der Verwendung des Schemas https (anstatt http) als Teil unserer Internetadresse.  
 Wenn Sie mehr zum Thema Verschlüsselung wissen möchten, empfehlen wir die Google Suche nach “Hypertext Transfer Protocol Secure wiki” um gute Links zu weiterführenden Informationen zu erhalten.
 
 ## Cookies
@@ -207,10 +207,10 @@ Es gibt sowohl Erstanbieter Cookies als auch Drittanbieter-Cookies. Erstanbieter
 
 So können zum Beispiel Cookie-Daten aussehen:
 
-**Name:** _ga  
-**Wert:** GA1.2.1326744211.152322736824-9  
-**Verwendungszweck:** Unterscheidung der Websitebesucher  
-**Ablaufdatum:** nach 2 Jahren
+**Name:** _ga  
+**Wert:** GA1.2.1326744211.152322736824-9  
+**Verwendungszweck:** Unterscheidung der Websitebesucher  
+**Ablaufdatum:** nach 2 Jahren
 
 Diese Mindestgrößen sollte ein Browser unterstützen können:
 
@@ -238,7 +238,7 @@ Man kann 4 Arten von Cookies unterscheiden:
 
 Sofern Cookies verwendet werden, werden Sie üblicherweise beim erstmaligen Besuch einer Website gefragt, welche dieser Cookiearten Sie zulassen möchten. Und natürlich wird diese Entscheidung auch in einem Cookie gespeichert.
 
-Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265), dem Request for Comments der Internet Engineering Task Force (IETF) namens “HTTP State Management Mechanism”.
+Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265), dem Request for Comments der Internet Engineering Task Force (IETF) namens “HTTP State Management Mechanism”.
 
 ### Zweck der Verarbeitung über Cookies
 
@@ -274,9 +274,9 @@ Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser s
 
 ### Rechtsgrundlage
 
-Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von Cookies eine **Einwilligung** (Artikel 6 Abs. 1 lit. a DSGVO) von Ihnen verlangt. Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In Österreich erfolgte aber die Umsetzung dieser Richtlinie in § 165 Abs. 3 des Telekommunikationsgesetzes (2021). In Deutschland wurden die Cookie-Richtlinien nicht als nationales Recht umgesetzt. Stattdessen erfolgte die Umsetzung dieser Richtlinie weitgehend in § 15 Abs.3 des Telemediengesetzes (TMG).
+Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von Cookies eine **Einwilligung** (Artikel 6 Abs. 1 lit. a DSGVO) von Ihnen verlangt. Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In Österreich erfolgte aber die Umsetzung dieser Richtlinie in § 165 Abs. 3 des Telekommunikationsgesetzes (2021). In Deutschland wurden die Cookie-Richtlinien nicht als nationales Recht umgesetzt. Stattdessen erfolgte die Umsetzung dieser Richtlinie weitgehend in § 15 Abs.3 des Telemediengesetzes (TMG).
 
-Für unbedingt notwendige Cookies, auch soweit keine Einwilligung vorliegt, bestehen **berechtigte Interessen** (Artikel 6 Abs. 1 lit. f DSGVO), die in den meisten Fällen wirtschaftlicher Natur sind. Wir möchten den Besuchern der Website eine angenehme Benutzererfahrung bescheren und dafür sind bestimmte Cookies oft unbedingt notwendig.
+Für unbedingt notwendige Cookies, auch soweit keine Einwilligung vorliegt, bestehen **berechtigte Interessen** (Artikel 6 Abs. 1 lit. f DSGVO), die in den meisten Fällen wirtschaftlicher Natur sind. Wir möchten den Besuchern der Website eine angenehme Benutzererfahrung bescheren und dafür sind bestimmte Cookies oft unbedingt notwendig.
 
 Soweit nicht unbedingt erforderliche Cookies zum Einsatz kommen, geschieht dies nur im Falle Ihrer Einwilligung. Rechtsgrundlage ist insoweit Art. 6 Abs. 1 lit. a DSGVO.
 
@@ -321,7 +321,7 @@ Sobald wir die Kundendaten zur Erfüllung unserer vertraglichen Pflichten und un
 
 ### Rechtsgrundlage
 
-Rechtsgrundlagen für die Verarbeitung Ihrer Daten sind Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs 1 lit. b DSGVO (Vertrag bzw. vorvertragliche Maßnahmen), Art. 6 Abs. 1 lit. f DSGVO (berechtigte Interessen)  und in speziellen Fällen (z. B. bei medizinischen Leistungen) Art. 9 Abs. 2 lit. a. DSGVO (Verarbeitung besonderer Kategorien).
+Rechtsgrundlagen für die Verarbeitung Ihrer Daten sind Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs 1 lit. b DSGVO (Vertrag bzw. vorvertragliche Maßnahmen), Art. 6 Abs. 1 lit. f DSGVO (berechtigte Interessen)  und in speziellen Fällen (z. B. bei medizinischen Leistungen) Art. 9 Abs. 2 lit. a. DSGVO (Verarbeitung besonderer Kategorien).
 
 Für den Fall des Schutzes lebenswichtiger Interessen erfolgt die Datenverarbeitung gemäß Art. 9 Abs. 2 lit. c. DSGVO. Für Zwecke der Gesundheitsversorgung, der Arbeitsmedizin, für die medizinische Diagnostik, für die Versorgung oder Behandlung im Gesundheits- oder Sozialbereich oder für die Verwaltung von Systemen und Diensten im Gesundheits- oder Sozialbereich erfolgt die Verarbeitung personenbezogener Daten gemäß Art. 9 Abs. 2 lit. h. DSGVO. Wenn Sie freiwillig Daten der besonderen Kategorien mitteilen, erfolgt die Verarbeitung auf Grundlage von Art. 9 Abs. 2 lit. a. DSGVO.
 
@@ -360,9 +360,9 @@ Sie haben auch jederzeit das Recht und die Möglichkeit Ihre Einwilligung zur Ve
 
 ### Rechtsgrundlage
 
-Der Einsatz von Web-Analytics setzt Ihre Einwilligung voraus, welche wir mit unserem Cookie Popup eingeholt haben. Diese Einwilligung stellt laut **Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)** die Rechtsgrundlage für die Verarbeitung personenbezogener Daten, wie sie bei der Erfassung durch Web-Analytics Tools vorkommen kann, dar.
+Der Einsatz von Web-Analytics setzt Ihre Einwilligung voraus, welche wir mit unserem Cookie Popup eingeholt haben. Diese Einwilligung stellt laut **Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)** die Rechtsgrundlage für die Verarbeitung personenbezogener Daten, wie sie bei der Erfassung durch Web-Analytics Tools vorkommen kann, dar.
 
-Zusätzlich zur Einwilligung besteht von unserer Seite ein berechtigtes Interesse daran, das Verhalten der Websitebesucher zu analysieren und so unser Angebot technisch und wirtschaftlich zu verbessern. Mit Hilfe von Web-Analytics erkennen wir Fehler der Website, können Attacken identifizieren und die Wirtschaftlichkeit verbessern. Die Rechtsgrundlage dafür ist **Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)**. Wir setzen die Tools gleichwohl nur ein, soweit sie eine Einwilligung erteilt haben.
+Zusätzlich zur Einwilligung besteht von unserer Seite ein berechtigtes Interesse daran, das Verhalten der Websitebesucher zu analysieren und so unser Angebot technisch und wirtschaftlich zu verbessern. Mit Hilfe von Web-Analytics erkennen wir Fehler der Website, können Attacken identifizieren und die Wirtschaftlichkeit verbessern. Die Rechtsgrundlage dafür ist **Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)**. Wir setzen die Tools gleichwohl nur ein, soweit sie eine Einwilligung erteilt haben.
 
 Da bei Web-Analytics-Tools Cookies zum Einsatz kommen, empfehlen wir Ihnen auch das Lesen unserer allgemeinen Datenschutzerklärung zu Cookies. Um zu erfahren, welche Daten von Ihnen genau gespeichert und verarbeitet werden, sollten Sie die Datenschutzerklärungen der jeweiligen Tools durchlesen.
 
@@ -372,13 +372,13 @@ Informationen zu speziellen Web-Analytics-Tools, erhalten Sie – sofern vorhand
 
 Wir verwenden auf unserer Website Firebase, ein Analyse- und Monitoring-Tool. Dienstanbieter ist das amerikanische Unternehmen Google Inc. Für den europäischen Raum ist das Unternehmen Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Irland) für alle Google-Dienste verantwortlich.
 
-Google verarbeitet Daten von Ihnen u.a. auch in den USA. Google ist aktiver Teilnehmer des EU-US Data Privacy Frameworks, wodurch der korrekte und sichere Datentransfer personenbezogener Daten von EU-Bürgern in die USA geregelt wird. Mehr Informationen dazu finden Sie auf [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
+Google verarbeitet Daten von Ihnen u.a. auch in den USA. Google ist aktiver Teilnehmer des EU-US Data Privacy Frameworks, wodurch der korrekte und sichere Datentransfer personenbezogener Daten von EU-Bürgern in die USA geregelt wird. Mehr Informationen dazu finden Sie auf [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
 
-Zudem verwendet Google sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn diese in Drittländer (wie beispielsweise in die USA) überliefert und dort gespeichert werden. Durch das EU-US Data Privacy Framework und durch die Standardvertragsklauseln verpflichtet sich Google, bei der Verarbeitung Ihrer relevanten Daten, das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier: [https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de)
+Zudem verwendet Google sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn diese in Drittländer (wie beispielsweise in die USA) überliefert und dort gespeichert werden. Durch das EU-US Data Privacy Framework und durch die Standardvertragsklauseln verpflichtet sich Google, bei der Verarbeitung Ihrer relevanten Daten, das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier: [https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de)
 
-Die Google Ads Datenverarbeitungsbedingungen (Google Ads Data Processing Terms), welche auf die Standardvertragsklauseln verweisen, finden Sie unter [https://business.safety.google/intl/de/adsprocessorterms/](https://business.safety.google/intl/de/adsprocessorterms/).
+Die Google Ads Datenverarbeitungsbedingungen (Google Ads Data Processing Terms), welche auf die Standardvertragsklauseln verweisen, finden Sie unter [https://business.safety.google/intl/de/adsprocessorterms/](https://business.safety.google/intl/de/adsprocessorterms/).
 
-Mehr über die Daten, die durch die Verwendung von Firebase verarbeitet werden, erfahren Sie in der Privacy Policy auf [https://policies.google.com/privacy?hl=de](https://policies.google.com/privacy?hl=de).
+Mehr über die Daten, die durch die Verwendung von Firebase verarbeitet werden, erfahren Sie in der Privacy Policy auf [https://policies.google.com/privacy?hl=de](https://policies.google.com/privacy?hl=de).
 
 ## Google Analytics Datenschutzerklärung
 
@@ -435,45 +435,45 @@ Laut Google werden in Google Analytics 4 keine IP-Adressen protokolliert oder ge
 
 Da bei Google Analytics 4 der Fokus auf ereignisbasierten Daten liegt, verwendet das Tool im Vergleich zu früheren Versionen (wie Google Universal Analytics) deutlich weniger Cookies. Dennoch gibt es einige spezifische Cookies, die von GA4 verwendet werden. Dazu zählen zum Beispiel:
 
-**Name:** `_ga`
-**Wert:** 2.1326744211.152322736824-5
-**Verwendungszweck:** Standardmäßig verwendet analytics.js das Cookie _ga, um die User-ID zu speichern. Grundsätzlich dient es zur Unterscheidung der Webseitenbesucher.
-**Ablaufdatum:** nach 2 Jahren
+**Name:** `_ga`
+**Wert:** 2.1326744211.152322736824-5
+**Verwendungszweck:** Standardmäßig verwendet analytics.js das Cookie _ga, um die User-ID zu speichern. Grundsätzlich dient es zur Unterscheidung der Webseitenbesucher.
+**Ablaufdatum:** nach 2 Jahren
 
 
-**Name:** `_gid`
-**Wert:** 2.1687193234.152322736824-1  
-**Verwendungszweck:** Das Cookie dient auch zur Unterscheidung der Webseitenbesucher  
-**Ablaufdatum:** nach 24 Stunden
+**Name:** `_gid`
+**Wert:** 2.1687193234.152322736824-1  
+**Verwendungszweck:** Das Cookie dient auch zur Unterscheidung der Webseitenbesucher  
+**Ablaufdatum:** nach 24 Stunden
 
-**Name:** `_gat_gtag_UA_<property-id>`  
-**Wert:** 1  
-**Verwendungszweck:** Wird zum Senken der Anforderungsrate verwendet. Wenn Google Analytics über den Google Tag Manager bereitgestellt wird, erhält dieser Cookie den Namen _dc_gtm_ <property-id>.  
-**Ablaufdatum:** nach 1 Minute
+**Name:** `_gat_gtag_UA_<property-id>`  
+**Wert:** 1  
+**Verwendungszweck:** Wird zum Senken der Anforderungsrate verwendet. Wenn Google Analytics über den Google Tag Manager bereitgestellt wird, erhält dieser Cookie den Namen _dc_gtm_ <property-id>.  
+**Ablaufdatum:** nach 1 Minute
 
-**Anmerkung:** Diese Aufzählung kann keinen Anspruch auf Vollständigkeit erheben, da Google die Wahl ihrer Cookies immer wieder auch verändert. Ziel von GA4 ist es auch, den Datenschutz zu verbessern. Daher bietet das Tool einige Möglichkeiten zur Kontrolle der Datenerfassung. So können wir beispielsweise die Speicherdauer selbst festlegen und auch die Datenerfassung steuern.
+**Anmerkung:** Diese Aufzählung kann keinen Anspruch auf Vollständigkeit erheben, da Google die Wahl ihrer Cookies immer wieder auch verändert. Ziel von GA4 ist es auch, den Datenschutz zu verbessern. Daher bietet das Tool einige Möglichkeiten zur Kontrolle der Datenerfassung. So können wir beispielsweise die Speicherdauer selbst festlegen und auch die Datenerfassung steuern.
 
 Hier zeigen wir Ihnen einen Überblick über die wichtigsten Arten von Daten, die mit Google Analytics erhoben werden:
 
-**Heatmaps:** Google legt sogenannte Heatmaps an. Über Heatmaps sieht man genau jene Bereiche, die Sie anklicken. So bekommen wir Informationen, wo Sie auf unserer Seite „unterwegs“ sind.
+**Heatmaps:** Google legt sogenannte Heatmaps an. Über Heatmaps sieht man genau jene Bereiche, die Sie anklicken. So bekommen wir Informationen, wo Sie auf unserer Seite „unterwegs“ sind.
 
-**Sitzungsdauer:** Als Sitzungsdauer bezeichnet Google die Zeit, die Sie auf unserer Seite verbringen, ohne die Seite zu verlassen. Wenn Sie 20 Minuten inaktiv waren, endet die Sitzung automatisch.
+**Sitzungsdauer:** Als Sitzungsdauer bezeichnet Google die Zeit, die Sie auf unserer Seite verbringen, ohne die Seite zu verlassen. Wenn Sie 20 Minuten inaktiv waren, endet die Sitzung automatisch.
 
-**Absprungrate** (engl. Bouncerate): Von einem Absprung ist die Rede, wenn Sie auf unserer Website nur eine Seite ansehen und dann unsere Website wieder verlassen.
+**Absprungrate** (engl. Bouncerate): Von einem Absprung ist die Rede, wenn Sie auf unserer Website nur eine Seite ansehen und dann unsere Website wieder verlassen.
 
-**Kontoerstellung:** Wenn Sie auf unserer Website ein Konto erstellen bzw. eine Bestellung machen, erhebt Google Analytics diese Daten.
+**Kontoerstellung:** Wenn Sie auf unserer Website ein Konto erstellen bzw. eine Bestellung machen, erhebt Google Analytics diese Daten.
 
-**Standort:** IP-Adressen werden in Google Analytics nicht protokolliert oder gespeichert. Allerdings werden kurz vor der Löschung der IP-Adresse Ableitungen für Standortdaten genutzt.
+**Standort:** IP-Adressen werden in Google Analytics nicht protokolliert oder gespeichert. Allerdings werden kurz vor der Löschung der IP-Adresse Ableitungen für Standortdaten genutzt.
 
-**Technische Informationen:** Zu den technischen Informationen zählen unter anderem Ihr Browsertyp, Ihr Internetanbieter oder Ihre Bildschirmauflösung.
+**Technische Informationen:** Zu den technischen Informationen zählen unter anderem Ihr Browsertyp, Ihr Internetanbieter oder Ihre Bildschirmauflösung.
 
-**Herkunftsquelle:** Google Analytics beziehungsweise uns interessiert natürlich auch über welche Website oder welche Werbung Sie auf unsere Seite gekommen sind.
+**Herkunftsquelle:** Google Analytics beziehungsweise uns interessiert natürlich auch über welche Website oder welche Werbung Sie auf unsere Seite gekommen sind.
 
 Weitere Daten sind Kontaktdaten, etwaige Bewertungen, das Abspielen von Medien (z. B., wenn Sie ein Video über unsere Seite abspielen), das Teilen von Inhalten über Social Media oder das Hinzufügen zu Ihren Favoriten. Die Aufzählung hat keinen Vollständigkeitsanspruch und dient nur zu einer allgemeinen Orientierung der Datenspeicherung durch Google Analytics.
 
 ### Wie lange und wo werden die Daten gespeichert?
 
-Google hat ihre Server auf der ganzen Welt verteilt. Hier können Sie genau nachlesen, wo sich die Google-Rechenzentren befinden: [https://www.google.com/about/datacenters/locations/?hl=de](https://www.google.com/about/datacenters/locations/?hl=de)
+Google hat ihre Server auf der ganzen Welt verteilt. Hier können Sie genau nachlesen, wo sich die Google-Rechenzentren befinden: [https://www.google.com/about/datacenters/locations/?hl=de](https://www.google.com/about/datacenters/locations/?hl=de)
 
 Ihre Daten werden auf verschiedenen physischen Datenträgern verteilt. Das hat den Vorteil, dass die Daten schneller abrufbar sind und vor Manipulation besser geschützt sind. In jedem Google-Rechenzentrum gibt es entsprechende Notfallprogramme für Ihre Daten. Wenn beispielsweise die Hardware bei Google ausfällt oder Naturkatastrophen Server lahmlegen, bleibt das Risiko einer Dienstunterbrechung bei Google dennoch gering.
 
@@ -490,19 +490,19 @@ Wenn der festgelegte Zeitraum abgelaufen ist, werden einmal im Monat die Daten g
 
 ### Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?
 
-Nach dem Datenschutzrecht der Europäischen Union haben Sie das Recht, Auskunft über Ihre Daten zu erhalten, sie zu aktualisieren, zu löschen oder einzuschränken. Mithilfe des Browser-Add-ons zur Deaktivierung von Google Analytics-JavaScript (analytics.js, gtag.js) verhindern Sie, dass Google Analytics 4 Ihre Daten verwendet. Das Browser-Add-on können Sie unter [https://tools.google.com/dlpage/gaoptout?hl=de](https://tools.google.com/dlpage/gaoptout?hl=de) runterladen und installieren. Beachten Sie bitte, dass durch dieses Add-on nur die Datenerhebung durch Google Analytics deaktiviert wird.
+Nach dem Datenschutzrecht der Europäischen Union haben Sie das Recht, Auskunft über Ihre Daten zu erhalten, sie zu aktualisieren, zu löschen oder einzuschränken. Mithilfe des Browser-Add-ons zur Deaktivierung von Google Analytics-JavaScript (analytics.js, gtag.js) verhindern Sie, dass Google Analytics 4 Ihre Daten verwendet. Das Browser-Add-on können Sie unter [https://tools.google.com/dlpage/gaoptout?hl=de](https://tools.google.com/dlpage/gaoptout?hl=de) runterladen und installieren. Beachten Sie bitte, dass durch dieses Add-on nur die Datenerhebung durch Google Analytics deaktiviert wird.
 
 Falls Sie grundsätzlich Cookies deaktivieren, löschen oder verwalten wollen, finden Sie unter dem Abschnitt „Cookies“ die entsprechenden Links zu den jeweiligen Anleitungen der bekanntesten Browser.
 
 ### Rechtsgrundlage
 
-Der Einsatz von Google Analytics setzt Ihre Einwilligung voraus, welche wir mit unserem Cookie Popup eingeholt haben. Diese Einwilligung stellt laut **Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)** die Rechtsgrundlage für die Verarbeitung personenbezogener Daten, wie sie bei der Erfassung durch Web-Analytics Tools vorkommen kann, dar.
+Der Einsatz von Google Analytics setzt Ihre Einwilligung voraus, welche wir mit unserem Cookie Popup eingeholt haben. Diese Einwilligung stellt laut **Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)** die Rechtsgrundlage für die Verarbeitung personenbezogener Daten, wie sie bei der Erfassung durch Web-Analytics Tools vorkommen kann, dar.
 
-Zusätzlich zur Einwilligung besteht von unserer Seite ein berechtigtes Interesse daran, das Verhalten der Websitebesucher zu analysieren und so unser Angebot technisch und wirtschaftlich zu verbessern. Mit Hilfe von Google Analytics erkennen wir Fehler der Website, können Attacken identifizieren und die Wirtschaftlichkeit verbessern. Die Rechtsgrundlage dafür ist **Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)**. Wir setzen Google Analytics gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben.
+Zusätzlich zur Einwilligung besteht von unserer Seite ein berechtigtes Interesse daran, das Verhalten der Websitebesucher zu analysieren und so unser Angebot technisch und wirtschaftlich zu verbessern. Mit Hilfe von Google Analytics erkennen wir Fehler der Website, können Attacken identifizieren und die Wirtschaftlichkeit verbessern. Die Rechtsgrundlage dafür ist **Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)**. Wir setzen Google Analytics gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben.
 
-Google verarbeitet Daten von Ihnen u.a. auch in den USA. Google ist aktiver Teilnehmer des EU-US Data Privacy Frameworks, wodurch der korrekte und sichere Datentransfer personenbezogener Daten von EU-Bürgern in die USA geregelt wird. Mehr Informationen dazu finden Sie auf [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
+Google verarbeitet Daten von Ihnen u.a. auch in den USA. Google ist aktiver Teilnehmer des EU-US Data Privacy Frameworks, wodurch der korrekte und sichere Datentransfer personenbezogener Daten von EU-Bürgern in die USA geregelt wird. Mehr Informationen dazu finden Sie auf [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
 
-Zudem verwendet Google sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn diese in Drittländer (wie beispielsweise in die USA) überliefert und dort gespeichert werden. Durch das EU-US Data Privacy Framework und durch die Standardvertragsklauseln verpflichtet sich Google, bei der Verarbeitung Ihrer relevanten Daten, das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier: [https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de)
+Zudem verwendet Google sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn diese in Drittländer (wie beispielsweise in die USA) überliefert und dort gespeichert werden. Durch das EU-US Data Privacy Framework und durch die Standardvertragsklauseln verpflichtet sich Google, bei der Verarbeitung Ihrer relevanten Daten, das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier: [https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de)
 
 Die Google Ads Datenverarbeitungsbedingungen (Google Ads Data Processing Terms), welche auf die Standardvertragsklauseln verweisen, finden Sie unter [https://business.safety.google/intl/de/adsprocessorterms/](https://business.safety.google/intl/de/adsprocessorterms/).
 
@@ -515,4 +515,4 @@ Wenn Sie mehr über die Datenverarbeitung erfahren wollen, nutzen Sie die Google
 
 Alle Texte sind urheberrechtlich geschützt.
 
-Quelle: Erstellt mit dem [Datenschutz Generator Deutschland](https://www.adsimple.de/datenschutz-generator/ "Datenschutz Generator Deutschland von AdSimple") von AdSimple
+Quelle: Erstellt mit dem [Datenschutz Generator Deutschland](https://www.adsimple.de/datenschutz-generator/ "Datenschutz Generator Deutschland von AdSimple") von AdSimple
