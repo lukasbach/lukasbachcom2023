@@ -19,7 +19,7 @@ St. Johännser Ring 40
 
 Germany
 
-**Email:** [contact@lukasbach.com](mailto:contact@lukasbach.com)
+**Email:** [contact@lukasbach.com](mailto:contact@lukasbach.com)
 
 **Contact details of the person responsible for data protection**
 If you have any questions about data protection, you will find the contact details of the responsible person or body below:
@@ -30,7 +30,7 @@ St. Johännser Ring 40
 
 71665 Vaihingen an der Enz
 
-Email address: [contact@lukasbach.com](mailto:contact@lukasbach.com)
+Email address: [contact@lukasbach.com](mailto:contact@lukasbach.com)
 
 ## EU dispute resolution
 
@@ -62,7 +62,7 @@ If you find content on this website that violates copyright, please contact us.
 
 All texts are copyrighted.
 
-Source: Created with the [Imprint Generator](https://www.adsimple.de/impressum-generator/ "Imprint Generator Germany from AdSimple") from AdSimple
+Source: Created with the [Imprint Generator](https://www.adsimple.de/impressum-generator/ "Imprint Generator Germany from AdSimple") from AdSimple
 
 
 # Data protection
@@ -71,7 +71,7 @@ Source: Created with the [Imprint Generator](https://www.adsimple.de/impressum-
 
 We have written this data protection declaration (version 02/28/2024-322736824) to provide you with the requirements of the
 [General Data Protection Regulation (EU) 2016/679](https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE&tid=322736824#d1e2269-1-1) and applicable national laws to explain which personal data (in short, data) we as controllers - and the processors commissioned by us (e.g. Provider) – process, will process in the future and what legal options you have. The terms used are to be understood as gender-neutral.
-**In Short:** We will provide you with full information about the data we process about you.
+**In Short:** We will provide you with full information about the data we process about you.
 
 Privacy policies usually sound very technical and use legal terms. This data protection declaration, however, is intended to describe the most important things to you as simply and transparently as possible. To the extent that it promotes transparency, technical **terms are explained in a reader-friendly manner**, links to further information are provided and **graphics** are used. We thereby inform you in clear and simple language that we only process personal data as part of our business activities if there is a corresponding legal basis. This is certainly not possible if you make as brief, unclear and legal-technical statements as possible, as are often standard on the Internet when it comes to data protection. I hope you find the following explanations interesting and informative and perhaps there is one or two pieces of information that you didn't know before.
 If you still have questions, we would like to ask you to contact the responsible body named below or in the legal notice, follow the existing links and look at further information on third-party sites. You can of course also find our contact details in the legal notice.
@@ -89,14 +89,14 @@ This data protection declaration applies to all personal data processed by us in
 ## Legal basis
 
 In the following data protection declaration we provide you with transparent information about the legal principles and regulations, i.e. the legal bases of the General Data Protection Regulation, which enable us to process personal data.
-As far as EU law is concerned, we refer to REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of April 27, 2016. You can of course access this EU General Data Protection Regulation online on EUR-Lex, the access to the EU -Law, at [https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679](https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679).
+As far as EU law is concerned, we refer to REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of April 27, 2016. You can of course access this EU General Data Protection Regulation online on EUR-Lex, the access to the EU -Law, at [https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679](https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679).
 
 We only process your data if at least one of the following conditions applies:
 
-1. **Consent** (Article 6 Paragraph 1 Letter a GDPR): You have given us your consent to process data for a specific purpose. An example would be saving the data you entered on a contact form.
-2. **Contract** (Article 6 Paragraph 1 Letter b GDPR): In order to fulfill a contract or pre-contractual obligations with you, we process your data. For example, if we conclude a purchase contract with you, we need personal information in advance.
-3. **Legal obligation** (Article 6 paragraph 1 lit. c GDPR): If we are subject to a legal obligation, we process your data. For example, we are legally obliged to keep invoices for accounting purposes. These usually contain personal data.
-4. **Legitimate interests** (Article 6 paragraph 1 lit. f GDPR): In the case of legitimate interests that do not restrict your fundamental rights, we reserve the right to process personal data. For example, we need to process certain data in order to operate our website securely and economically efficiently. This processing is therefore a legitimate interest.
+1. **Consent** (Article 6 Paragraph 1 Letter a GDPR): You have given us your consent to process data for a specific purpose. An example would be saving the data you entered on a contact form.
+2. **Contract** (Article 6 Paragraph 1 Letter b GDPR): In order to fulfill a contract or pre-contractual obligations with you, we process your data. For example, if we conclude a purchase contract with you, we need personal information in advance.
+3. **Legal obligation** (Article 6 paragraph 1 lit. c GDPR): If we are subject to a legal obligation, we process your data. For example, we are legally obliged to keep invoices for accounting purposes. These usually contain personal data.
+4. **Legitimate interests** (Article 6 paragraph 1 lit. f GDPR): In the case of legitimate interests that do not restrict your fundamental rights, we reserve the right to process personal data. For example, we need to process certain data in order to operate our website securely and economically efficiently. This processing is therefore a legitimate interest.
 
 Other conditions such as the perception of recordings in the public interest and the exercise of public authority as well as the protection of vital interests generally do not apply to us. If such a legal basis is relevant, it will be shown in the appropriate place.
 
@@ -114,7 +114,7 @@ If you have any questions about data protection or the processing of personal da
 Lukas Bach
 St. Johännser Ring 40
 71665 Vaihingen an der Enz
-Email address: [contact@lukasbach.com](mailto:contact@lukasbach.com)
+Email address: [contact@lukasbach.com](mailto:contact@lukasbach.com)
 
 ## Storage duration
 
@@ -150,21 +150,21 @@ In accordance with Articles 13, 14 GDPR, we inform you of the following rights t
 
 **In short:** You have rights - do not hesitate to contact the responsible body listed above!
 
-If you believe that the processing of your data violates data protection law or your data protection rights have been violated in any other way, you can complain to the supervisory authority. For Austria, this is the data protection authority, whose website you can find at [https://www.dsb.gv.at/](https://www.dsb.gv.at/?tid=322736824). In Germany there is a data protection officer for each federal state. For further information, you can contact the [Federal Commissioner for Data Protection and Freedom of Information (BfDI)](https://www.bfdi.bund.de/DE/Home/home_node.html). The following local data protection authority is responsible for our company:
+If you believe that the processing of your data violates data protection law or your data protection rights have been violated in any other way, you can complain to the supervisory authority. For Austria, this is the data protection authority, whose website you can find at [https://www.dsb.gv.at/](https://www.dsb.gv.at/?tid=322736824). In Germany there is a data protection officer for each federal state. For further information, you can contact the [Federal Commissioner for Data Protection and Freedom of Information (BfDI)](https://www.bfdi.bund.de/DE/Home/home_node.html). The following local data protection authority is responsible for our company:
 
 ## Baden-Württemberg data protection authority
 
 **State Commissioner for Data Protection:** Prof. Dr. Tobias Keber
-**Address:** Lautenschlagerstraße 20, 70173 Stuttgart
+**Address:** Lautenschlagerstraße 20, 70173 Stuttgart
 **Telephone number:** 07 11/61 55 41-0
-**Email address:** [poststelle@lfdi.bwl.de](mailto:poststelle@lfdi.bwl.de)
-**Website:** [https://www.baden-wuerttemberg.datenschutz.de/](https://www.baden-wuerttemberg.datenschutz.de/?tid=322736824)
+**Email address:** [poststelle@lfdi.bwl.de](mailto:poststelle@lfdi.bwl.de)
+**Website:** [https://www.baden-wuerttemberg.datenschutz.de/](https://www.baden-wuerttemberg.datenschutz.de/?tid=322736824)
 
 ## Data transfer to third countries
 
 We only transfer or process data to countries outside the scope of the GDPR (third countries) if you consent to this processing or there is other legal permission. This applies in particular if the processing is required by law or necessary to fulfill a contractual relationship and in any case only to the extent that this is generally permitted. In most cases, your consent is the most important reason why we have data processed in third countries. Processing personal data in third countries such as the USA, where many software manufacturers provide services and have their server locations, may mean that personal data is processed and stored in unexpected ways.
 
-We expressly point out that, in the opinion of the European Court of Justice, there is currently only an adequate level of protection for data transfer to the USA if a US company that processes personal data of EU citizens in the USA is an active participant in the EU-US Data Privacy Frameworks is. More information can be found at: [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en)
+We expressly point out that, in the opinion of the European Court of Justice, there is currently only an adequate level of protection for data transfer to the USA if a US company that processes personal data of EU citizens in the USA is an active participant in the EU-US Data Privacy Frameworks is. More information can be found at: [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en)
 
 Data processing by US services that are not active participants in the EU-US Data Privacy Framework may result in data not being processed and stored anonymously. Furthermore, US government authorities may have access to individual data. It can also happen that collected data is linked to data from other services from the same provider, provided you have a corresponding user account. If possible, we try to use server locations within the EU, if this is offered.
 We will inform you in more detail about data transfer to third countries in the appropriate places in this data protection declaration, if this applies.
@@ -213,9 +213,9 @@ There are both first-party cookies and third-party cookies. First-party cookies 
 For example, cookie data might look like this:
 
 * **Name:** `_ga`
-* **Value:** `GA1.2.1326744211.152322736824-9`
-* **Use:** Distinguish between website visitors
-* **Expiry date:** after 2 years
+* **Value:** `GA1.2.1326744211.152322736824-9`
+* **Use:** Distinguish between website visitors
+* **Expiry date:** after 2 years
 
 A browser should be able to support these minimum sizes:
 
@@ -240,7 +240,7 @@ Man kann 4 Arten von Cookies unterscheiden:
 
 Sofern Cookies verwendet werden, werden Sie üblicherweise beim erstmaligen Besuch einer Website gefragt, welche dieser Cookiearten Sie zulassen möchten. Und natürlich wird diese Entscheidung auch in einem Cookie gespeichert.
 
-Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265), dem Request for Comments der Internet Engineering Task Force (IETF) namens “HTTP State Management Mechanism”.](<There are 4 types of cookies:
+Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265), dem Request for Comments der Internet Engineering Task Force (IETF) namens “HTTP State Management Mechanism”.](<There are 4 types of cookies:
 
 * Essential cookies
   * These cookies are necessary to ensure basic functions of the website. For example, these cookies are needed when a user puts a product in the shopping cart, then continues surfing on other pages and only later checks out. These cookies do not delete the shopping cart, even if the user closes their browser window.
@@ -253,7 +253,7 @@ Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht
 
 If cookies are used, you will usually be asked when you first visit a website which of these types of cookies you would like to allow. And of course this decision is also saved in a cookie.
 
-If you would like to know more about cookies and are not afraid of technical documentation, we recommend [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265), the Request for Comments from the Internet Engineering Task Force (IETF) called “HTTP State Management Mechanism”.)
+If you would like to know more about cookies and are not afraid of technical documentation, we recommend [https://datatracker.ietf.org/doc/html/rfc6265](https://datatracker.ietf.org/doc/html/rfc6265), the Request for Comments from the Internet Engineering Task Force (IETF) called “HTTP State Management Mechanism”.)
 
 ### Purpose of processing via cookies
 
@@ -381,7 +381,7 @@ You also have the right and the opportunity to revoke your consent to the use of
 
 ### Legal basis
 
-The use of web analytics requires your consent, which we obtained with our cookie popup. According to **Art. 6 Para. 1 lit. a GDPR (consent)** represents the legal basis for the processing of personal data, as may occur when collected by web analytics tools.
+The use of web analytics requires your consent, which we obtained with our cookie popup. According to **Art. 6 Para. 1 lit. a GDPR (consent)** represents the legal basis for the processing of personal data, as may occur when collected by web analytics tools.
 
 In addition to consent, we have a legitimate interest in analyzing the behavior of website visitors and thus improving our offering technically and economically. With the help of web analytics, we detect website errors, identify attacks and improve profitability. The legal basis for this is **Art. 6 para. 1 lit. f GDPR (legitimate interests)**. However, we only use the tools if you have given your consent.
 
@@ -394,13 +394,13 @@ Information about special web analytics tools, if available, can be found in the
 
 We use Firebase, an analysis and monitoring tool, on our website. The service provider is the American company Google Inc. For Europe, the company Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Ireland) is responsible for all Google services.
 
-Google also processes your data in the USA, among other places. Google is an active participant in the EU-US Data Privacy Framework, which regulates the correct and secure transfer of personal data from EU citizens to the USA. More information can be found at [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
+Google also processes your data in the USA, among other places. Google is an active participant in the EU-US Data Privacy Framework, which regulates the correct and secure transfer of personal data from EU citizens to the USA. More information can be found at [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
 
 Google also uses so-called standard contractual clauses (= Art. 46 Paragraphs 2 and 3 GDPR). Standard Contractual Clauses (SCC) are templates provided by the EU Commission and are intended to ensure that your data complies with European data protection standards even if it is transferred to third countries (such as the USA) and stored there. Through the EU-US Data Privacy Framework and the Standard Contractual Clauses, Google undertakes to comply with the European level of data protection when processing your relevant data, even if the data is stored, processed and managed in the USA. These clauses are based on an implementing decision of the EU Commission. You can find the resolution and the corresponding standard contractual clauses here, among others: [https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj)
 
 The Google Ads Data Processing Terms, which refer to the standard contractual clauses, can be found at [https://business.safety.google/intl/de/adsprocessorterms/](https://business.safety.google/intl/de/adsprocessorterms/).
 
-You can find out more about the data processed through the use of Firebase in the Privacy Policy at [https://policies.google.com/privacy](https://policies.google.com/privacy).
+You can find out more about the data processed through the use of Firebase in the Privacy Policy at [https://policies.google.com/privacy](https://policies.google.com/privacy).
 
 ## Google Analytics Privacy Policy
 
@@ -458,19 +458,19 @@ According to Google, Google Analytics 4 does not log or store IP addresses. Howe
 Because Google Analytics 4 focuses on event-based data, the tool uses significantly fewer cookies compared to previous versions (like Google Universal Analytics). However, there are some specific cookies used by GA4. These include, for example:
 
 **Name:** `_ga`
-**Value:** 2.1326744211.152322736824-5
-**Intended Use:** By default, analytics.js uses the _ga cookie to store the user ID. Basically, it is used to distinguish website visitors.
-**Expiry date:** after 2 years
+**Value:** 2.1326744211.152322736824-5
+**Intended Use:** By default, analytics.js uses the _ga cookie to store the user ID. Basically, it is used to distinguish website visitors.
+**Expiry date:** after 2 years
 
 **Name:** `_gid`
-**Value:** 2.1687193234.152322736824-1
+**Value:** 2.1687193234.152322736824-1
 **Purpose:** The cookie is also used to distinguish website visitors
-**Expiry date:** after 24 hours
+**Expiry date:** after 24 hours
 
-**Name:** `_gat_gtag_UA_<property-id>`
+**Name:** `_gat_gtag_UA_<property-id>`
 **Value:** 1
-**Usage:** Used to reduce request rate. If Google Analytics is provided via Google Tag Manager, this cookie is named `_dc_gtm_ <property-id>`.
-**Expiry date:** after 1 minute
+**Usage:** Used to reduce request rate. If Google Analytics is provided via Google Tag Manager, this cookie is named `_dc_gtm_ <property-id>`.
+**Expiry date:** after 1 minute
 
 **Note:** This list cannot claim to be complete, as Google continually changes its choice of cookies. GA4 also aims to improve data protection. Therefore, the tool offers some options for controlling data collection. For example, we can set the storage period ourselves and also control data collection.
 
@@ -482,11 +482,11 @@ Here we show you an overview of the main types of data collected with Google Ana
 
 **Bounce rate** (English bounce rate): A bounce is when you only view one page on our website and then leave our website again.
 
-**Account Creation:** When you create an account or place an order on our website, Google Analytics collects this information.
+**Account Creation:** When you create an account or place an order on our website, Google Analytics collects this information.
 
 **Location:** IP addresses are not logged or stored in Google Analytics. However, shortly before the IP address is deleted, derivatives for location data are used.
 
-**Technical Information:** Technical information may include, but is not limited to, your browser type, internet service provider, or screen resolution.
+**Technical Information:** Technical information may include, but is not limited to, your browser type, internet service provider, or screen resolution.
 
 **Source of origin:** Google Analytics or we are of course also interested in which website or advertising you came to our site from.
 
@@ -511,26 +511,26 @@ Once the specified period has expired, the data will be deleted once a month. Th
 
 ### How can I delete my data or prevent data storage?
 
-Under European Union data protection law, you have the right to access, update, delete or restrict your data. You can use the browser add-on to deactivate Google Analytics JavaScript (analytics.js, gtag.js) to prevent Google Analytics 4 from using your data. You can download and install the browser add-on at [https://tools.google.com/dlpage/gaoptout](https://tools.google.com/dlpage/gaoptout). Please note that this add-on only deactivates data collection by Google Analytics.
+Under European Union data protection law, you have the right to access, update, delete or restrict your data. You can use the browser add-on to deactivate Google Analytics JavaScript (analytics.js, gtag.js) to prevent Google Analytics 4 from using your data. You can download and install the browser add-on at [https://tools.google.com/dlpage/gaoptout](https://tools.google.com/dlpage/gaoptout). Please note that this add-on only deactivates data collection by Google Analytics.
 
 If you generally want to deactivate, delete or manage cookies, you will find the relevant links to the relevant instructions for the most popular browsers under the “Cookies” section.
 
 ### Legal basis
 
-The use of Google Analytics requires your consent, which we obtained with our cookie popup. According to **Art. 6 Para. 1 lit. a GDPR (consent)** represents the legal basis for the processing of personal data, as may occur when collected by web analytics tools.
+The use of Google Analytics requires your consent, which we obtained with our cookie popup. According to **Art. 6 Para. 1 lit. a GDPR (consent)** represents the legal basis for the processing of personal data, as may occur when collected by web analytics tools.
 
 In addition to consent, we have a legitimate interest in analyzing the behavior of website visitors and thus improving our offering technically and economically. With the help of Google Analytics, we detect errors on the website, identify attacks and improve profitability. The legal basis for this is **Art. 6 para. 1 lit. f GDPR (legitimate interests)**. However, we only use Google Analytics if you have given your consent.
 
-Google also processes your data in the USA, among other places. Google is an active participant in the EU-US Data Privacy Framework, which regulates the correct and secure transfer of personal data from EU citizens to the USA. More information can be found at [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
+Google also processes your data in the USA, among other places. Google is an active participant in the EU-US Data Privacy Framework, which regulates the correct and secure transfer of personal data from EU citizens to the USA. More information can be found at [https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
 
 Google also uses so-called standard contractual clauses (= Art. 46 Paragraphs 2 and 3 GDPR). Standard Contractual Clauses (SCC) are templates provided by the EU Commission and are intended to ensure that your data complies with European data protection standards even if it is transferred to third countries (such as the USA) and stored there. Through the EU-US Data Privacy Framework and the Standard Contractual Clauses, Google undertakes to comply with the European level of data protection when processing your relevant data, even if the data is stored, processed and managed in the USA. These clauses are based on an implementing decision of the EU Commission. You can find the resolution and the corresponding standard contractual clauses here, among others: [https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj)
 
-The Google Ads Data Processing Terms, which refer to the standard contractual clauses, can be found at [https://business.safety.google/intl/de/adsprocessorterms/](https://business.safety.google/intl/de/adsprocessorterms/).
+The Google Ads Data Processing Terms, which refer to the standard contractual clauses, can be found at [https://business.safety.google/intl/de/adsprocessorterms/](https://business.safety.google/intl/de/adsprocessorterms/).
 
-We hope we were able to provide you with the most important information about data processing by Google Analytics. If you want to find out more about the tracking service, we recommend these two links: [https://marketingplatform.google.com/about/analytics/terms/de/](https://marketingplatform.google.com/about/analytics/terms/de/) and [https://support.google.com/analytics/answer/6004245](https://support.google.com/analytics/answer/6004245) .
+We hope we were able to provide you with the most important information about data processing by Google Analytics. If you want to find out more about the tracking service, we recommend these two links: [https://marketingplatform.google.com/about/analytics/terms/de/](https://marketingplatform.google.com/about/analytics/terms/de/) and [https://support.google.com/analytics/answer/6004245](https://support.google.com/analytics/answer/6004245) .
 
-If you want to find out more about data processing, please use the Google privacy policy at [https://policies.google.com/privacy](https://policies.google.com/privacy?tid=322736824).
+If you want to find out more about data processing, please use the Google privacy policy at [https://policies.google.com/privacy](https://policies.google.com/privacy?tid=322736824).
 
 All texts are copyrighted.
 
-Source: Created with the [Data Protection Generator Germany](https://www.adsimple.de/datenschutz-generator/ "Data Protection Generator Germany by AdSimple") by AdSimple
+Source: Created with the [Data Protection Generator Germany](https://www.adsimple.de/datenschutz-generator/ "Data Protection Generator Germany by AdSimple") by AdSimple
