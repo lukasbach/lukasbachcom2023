@@ -5,7 +5,7 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 import { TransparentButton } from "./transparent-button";
 import { useContainerSize } from "../../util";
 
-export const HeaderLinks: FC = () => {
+export const HeaderLinks: FC<{ isHome?: boolean }> = ({ isHome }) => {
   const size = useContainerSize();
   const small = ["xs", "sm"].includes(size);
   return small ? (
@@ -22,9 +22,16 @@ export const HeaderLinks: FC = () => {
         <Menu.Item component={Link} to="/blog">
           Blog
         </Menu.Item>
-        <Menu.Item component="a" href="https://github.com/lukasbach" target="_blank">
-          GitHub
-        </Menu.Item>
+        {!isHome && (
+          <Menu.Item component="a" href="https://github.com/lukasbach" target="_blank">
+            GitHub
+          </Menu.Item>
+        )}
+        {!isHome && (
+          <Menu.Item component="a" href="https://github.com/sponsors/lukasbach" target="_blank">
+            Sponsor
+          </Menu.Item>
+        )}
       </Menu.Dropdown>
     </Menu>
   ) : (
@@ -35,9 +42,16 @@ export const HeaderLinks: FC = () => {
       <TransparentButton component={Link} to="/blog">
         Blog
       </TransparentButton>
-      <TransparentButton component="a" href="https://github.com/lukasbach" target="_blank">
-        GitHub
-      </TransparentButton>
+      {!isHome && (
+        <TransparentButton component="a" href="https://github.com/lukasbach" target="_blank">
+          GitHub
+        </TransparentButton>
+      )}
+      {!isHome && (
+        <TransparentButton component="a" href="https://github.com/sponsors/lukasbach" target="_blank">
+          Sponsor
+        </TransparentButton>
+      )}
     </Group>
   );
 };

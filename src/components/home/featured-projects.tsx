@@ -70,17 +70,6 @@ export const FeaturedProjects: FC = () => {
         </Title>
         <Group spacing={32} mb={64}>
           <ProjectCard
-            category="App"
-            title="Yana"
-            id="yana"
-            text="Powerful note-taking app with nested documents, full-text search, rich-text editor, code snippet editor and more"
-            pictogram={<YanaPictogram />}
-            svgCss={{
-              top: "10px",
-              right: "-10px",
-            }}
-          />
-          <ProjectCard
             category="Library"
             title="React Complex Tree"
             id="react-complex-tree"
@@ -90,6 +79,17 @@ export const FeaturedProjects: FC = () => {
               top: "10px",
               right: "-75px",
               height: "100px",
+            }}
+          />
+          <ProjectCard
+            category="App"
+            title="Yana"
+            id="yana"
+            text="Powerful note-taking app with nested documents, full-text search, rich-text editor, code snippet editor and more"
+            pictogram={<YanaPictogram />}
+            svgCss={{
+              top: "10px",
+              right: "-10px",
             }}
           />
           <ProjectCard
