@@ -28,6 +28,7 @@ const links = {
   twitter: `https://twitter.com/${me.twitterUser}`,
   medium: `https://medium.com/${me.mediumUser}`,
   mailto: `mailto:${me.mail}`,
+  sponsor: `https://github.com/sponsors/${me.githubUser}`,
 };
 
 const siteMetadata = {
@@ -75,6 +76,11 @@ const siteMetadata = {
           {
             text: "Twitter",
             href: links.twitter,
+            isExternal: true,
+          },
+          {
+            text: "Sponsor",
+            href: links.sponsor,
             isExternal: true,
           },
         ],

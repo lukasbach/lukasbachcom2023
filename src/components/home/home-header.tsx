@@ -5,6 +5,7 @@ import { BsLinkedin, BsMedium } from "react-icons/bs";
 import { DiGithubBadge } from "react-icons/di";
 import { IoMdMail } from "react-icons/io";
 import { graphql, useStaticQuery } from "gatsby";
+import { IoHeart } from "react-icons/all";
 import { TransparentButton } from "../atoms/transparent-button";
 import { ContentGrid } from "../atoms/content-grid";
 import { HeaderBg } from "../atoms/header-bg";
@@ -24,6 +25,7 @@ const useLinks = () =>
             twitter
             medium
             mailto
+            sponsor
           }
         }
       }
@@ -73,6 +75,9 @@ export const HomeHeader: FC = () => {
                   <Menu.Item icon={<IoMdMail />} component="a" href={links?.mailto ?? "#"} target="_blank">
                     E-Mail
                   </Menu.Item>
+                  <Menu.Item icon={<IoHeart />} component="a" href={links?.sponsor ?? "#"} target="_blank">
+                    Sponsor
+                  </Menu.Item>
                 </Menu.Dropdown>
               </Menu>
             </Box>
@@ -90,9 +95,12 @@ export const HomeHeader: FC = () => {
               <TransparentButton leftIcon={<IoMdMail />} component="a" href={links?.mailto ?? "#"} target="_blank">
                 E-Mail
               </TransparentButton>
+              <TransparentButton leftIcon={<IoHeart />} component="a" href={links?.sponsor ?? "#"} target="_blank">
+                Sponsor
+              </TransparentButton>
             </Group>
           )}
-          <HeaderLinks />
+          <HeaderLinks isHome />
         </Flex>
       </ContentGrid>
     </HeaderBg>
