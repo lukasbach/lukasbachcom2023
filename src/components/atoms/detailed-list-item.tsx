@@ -10,6 +10,7 @@ export function DetailedListItem<T = "a">({
   description,
   meta,
   highlighted,
+  titleRightAligned,
   ...props
 }: {
   listCategory: string | undefined;
@@ -17,6 +18,7 @@ export function DetailedListItem<T = "a">({
   description: string;
   meta: string;
   highlighted: boolean;
+  titleRightAligned?: boolean;
 } & import("@mantine/utils").PolymorphicComponentProps<T, BoxProps>) {
   const theme = useMantineTheme();
   return (
@@ -30,7 +32,7 @@ export function DetailedListItem<T = "a">({
             " > *": {
               borderRadius: theme.radius.md,
             },
-            ":hover > *": { backgroundColor: theme.colors.dark[8] },
+            ":hover > *": { backgroundColor: theme.colors.dark[9] },
             ":focus > *": {
               outline: `2px solid ${theme.white}`,
             },
@@ -52,7 +54,9 @@ export function DetailedListItem<T = "a">({
             </Flex>
           </Grid.Col>
           <Grid.Col md={3}>
-            <Text color={theme.white}>{title}</Text>
+            <Text color={theme.white} align={titleRightAligned ? "right" : undefined}>
+              {title}
+            </Text>
           </Grid.Col>
           <Grid.Col md={5}>
             <Text color={theme.colors.dark[1]}>{description}</Text>

@@ -7,6 +7,7 @@ import { BlogPreview } from "../components/home/blog-preview";
 import { PageHead } from "../components/atoms/page-head";
 import { Resources } from "../components/home/resources";
 import { Footer } from "../components/atoms/footer";
+import { Releases } from "../components/home/releases";
 
 const IndexPage: React.FC<PageProps> = () => (
   <LayoutProvider>
@@ -14,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => (
     <FeaturedProjects />
     <BlogPreview />
     <Resources />
+    <Releases />
     <Footer wide />
   </LayoutProvider>
 );

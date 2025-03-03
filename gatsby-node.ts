@@ -5,6 +5,58 @@ import yaml from "js-yaml";
 import { components } from "@octokit/openapi-types";
 import config from "./gatsby-config";
 
+const releasesGraphql = (after: string | undefined) => `query {
+  user(login:"lukasbach") {
+    repositories(first:100${after ? `, after:"${after}"` : ""}) {
+      totalCount
+      nodes {
+        nameWithOwner
+        releases(first: 10) {
+          nodes {
+            publishedAt
+            name
+            tagName
+            isDraft
+            resourcePath
+          }
+        }
+      }
+      edges {
+        cursor
+      }
+    }
+  }
+}`;
+type ReleasesGraphqlResponse = {
+  user: {
+    repositories: {
+      totalCount: number;
+      nodes: {
+        nameWithOwner: string;
+        releases: {
+          nodes: {
+            publishedAt: string;
+            name: string;
+            tagName: string;
+            isDraft: boolean;
+            resourcePath: string;
+          }[];
+        };
+      }[];
+      edges: {
+        cursor: string;
+      }[];
+    };
+  };
+};
+type Release = {
+  nameWithOwner: string;
+  publishedAt: string;
+  name: string;
+  tagName: string;
+  isDraft: boolean;
+};
+
 const octokit = new Octokit({ auth: process.env.GITHUB_API_KEY });
 octokit.rest.rateLimit.get().then(limit => console.log("Rate limiting: ", limit.data.rate));
 
@@ -25,6 +77,30 @@ const readGithubFile = (owner: string, repo: string, path: string) =>
     })
     .then(({ data }) => decodeFile(data))
     .catch(() => null);
+
+const readReleases = async () => {
+  let count = 0;
+  let total = 0;
+  let cursor;
+  const releases: Release[] = [];
+  do {
+    const batch = (await octokit.graphql(releasesGraphql(cursor))) as ReleasesGraphqlResponse;
+    count += batch.user.repositories.nodes.length;
+    total = batch.user.repositories.totalCount;
+    cursor = batch.user.repositories.edges.at(-1)?.cursor;
+    releases.push(
+      ...batch.user.repositories.nodes.flatMap(repo =>
+        repo.releases.nodes.map(release => ({
+          nameWithOwner: repo.nameWithOwner,
+          ...release,
+        }))
+      )
+    );
+  } while (count < total);
+  return releases
+    .filter(a => !!a.publishedAt)
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+};
 
 export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNodeId, createContentDigest }) => {
   const projectData: any = yaml.load(readFileSync("./data/project-data.yaml", "utf-8"));
@@ -124,5 +200,18 @@ export const sourceNodes: GatsbyNode["sourceNodes"] = async ({ actions, createNo
       writeFileSync(`${__dirname}/content/projects/${repo.name}.md`, `---${frontmatter}\n---\n\n${cleanedReadme}`);
     }
   }
-  console.log("Finished loading data from github");
+  console.log("Finished loading repo data from github");
+
+  const releases = await readReleases();
+  for (const release of releases) {
+    actions.createNode({
+      ...release,
+      id: createNodeId(release.nameWithOwner + release.tagName),
+      internal: {
+        type: "release",
+        contentDigest: createContentDigest(release),
+      },
+    });
+  }
+  console.log("Finished loading release data from github");
 };
