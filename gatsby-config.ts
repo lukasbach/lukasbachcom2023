@@ -143,12 +143,12 @@ const config = {
       },
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-source-medium`,
-      options: {
-        username: siteMetadata.mediumUser,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-medium`,
+    //   options: {
+    //     username: siteMetadata.mediumUser,
+    //   },
+    // },
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
