@@ -11,8 +11,8 @@ const me = {
   title: `Lukas Bach`,
   description:
     "I am a software engineer focused on frontend development. I primarily work with TypeScript and " +
-    "React, and am interested in accessibility, infrastructure and architecture. Currently, I am working at GoTo in Karlsruhe.",
-  shortDescription: "Software engineer at GoTo",
+    "React, and am interested in accessibility, infrastructure and architecture. Currently, I am working at Waymo in Mountain View, CA.",
+  shortDescription: "Software engineer at Waymo",
   siteUrl: `https://lukasbach.com`,
   githubUser: "lukasbach",
   mediumUser: "@lukasbach",
@@ -42,8 +42,8 @@ const siteMetadata = {
         text: "Featured Projects",
         links: [
           {
-            text: "React Complex Tree",
-            href: `/projects/react-complex-tree`,
+            text: "Headless Tree",
+            href: `/projects/headless-tree`,
           },
           {
             text: "Monaco Auto Typings",

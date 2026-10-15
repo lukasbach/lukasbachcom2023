@@ -71,8 +71,8 @@ export const FeaturedProjects: FC = () => {
         <Group spacing={32} mb={64}>
           <ProjectCard
             category="Library"
-            title="React Complex Tree"
-            id="react-complex-tree"
+            title="Headless Tree"
+            id="headless-tree"
             text="Unopinionated Accessible Tree Component with Multi-Select and Drag-And-Drop"
             pictogram={<RctPictogram />}
             svgCss={{
